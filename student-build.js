@@ -1,0 +1,1 @@
+window.COURSE_STUDENT_EDITION = true;

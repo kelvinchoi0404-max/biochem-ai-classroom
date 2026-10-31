@@ -1,0 +1,55 @@
+/* Reviewed against each chapter's question, givens and worked solution. Paragraph indices are source indices. */
+(function(){
+ 'use strict';
+ const plans={};
+ const p=(text,...paragraphs)=>({text,paragraphs});
+ const t=text=>({text});
+ const im=image=>({image});
+ const d=diagram=>({diagram});
+ const add=(chapter,page,steps,extra={})=>plans[chapter+'/'+page]={steps,...extra};
+ const seq=(a,b)=>Array.from({length:b-a+1},(_,i)=>a+i);
+ add('02',15,seq(1,5).map(col=>seq(1,4).map(row=>t(3+row*6+col))),{instruction:'先完成真值表，再逐欄核對。'});
+ add('02',18,[5,6,7].map(n=>[p(2,n)]));
+ add('02',20,seq(8,13).map(n=>[p(2,n)]),{instruction:'先把六句話符號化，再逐題核對。'});
+ add('02',39,[[p(2,3,4)],[p(2,6,7)],[p(2,9)]],{instruction:'根據初始事實，依次找出可執行的規則。'});
+ // Page 40 is a direct diagram-and-rule reference, as requested for classroom explanation.
+ add('02',47,[[d(0)]],{instruction:'先自行整理框架，再查看圖中的表示方法。'});
+ for(const n of [33,34])add('03',n,seq(2,10).map(i=>[p(2,i)]));
+ // The display-only v17 update inserts prenex form as step 4; raw source paragraphs stay unchanged.
+ add('03',35,seq(1,5).map(i=>[{selector:'[data-clause-solution-step="'+i+'"]'}]));
+ add('03',36,[[p(2,2)]]);
+ add('03',38,[[{selector:'[data-resolution-question]'}],[{selector:'[data-resolution-answer]'}]],{instruction:'先顯示題目讓學生求歸結式，再顯示答案。',stepLabels:['顯示題目','顯示答案'],footerAdvance:true});
+ add('03',41,[[p(2,2,3)],[p(2,4)],[p(2,5,6)],[p(2,7),d(0)]]);
+ add('03',42,[[p(2,2,3)],[p(2,4)],[p(2,5)]]);
+ add('03',45,[[t(3)],[t(4)],[d(0)]]);
+ for(const n of [46,48])add('03',n,[[t(3)],[t(4)],[p(5,0,1)],[p(5,2)],[p(5,3)]]);
+ add('03',66,[[p(2,1,2)],[p(2,3,4)],[p(2,5)],[p(2,7,8)],[p(2,9,10)]],{questionPage:65});
+ add('03',67,[[p(2,1)],[p(2,2)],[p(2,3)],[p(2,5)],[p(2,6,8)]],{questionPage:65});
+ add('03',74,[[p(2,9)]]);
+ add('03',75,[[p(2,8)],[p(2,10)]]);
+ add('03',77,[[p(2,6)],[p(2,8,9)],[p(2,10)],[p(2,12,13)]]);
+ add('03',80,[[p(2,1,2,3,4)],[p(2,6,7,8)],[p(2,10,11)]],{questionPage:79});
+ add('03',81,[[p(2,2,3)],[p(2,5,6)],[p(2,8)],[p(2,9,10,12)]],{questionPage:79});
+ add('03',82,[[p(2,2)],[p(2,4,5)],[p(2,7,8)],[p(2,10,11)],[p(2,13)]],{questionPage:79});
+ add('03',83,[[p(2,7,8)],[p(2,9)]]);
+ add('03',84,[[p(2,5,6)],[p(2,8)],[p(2,9,10)],[p(2,12)]]);
+ for(const n of [93,94])add('03',n,seq(7,10).map(i=>[p(3,i)]));
+ add('03',97,[[p(2,7),im(0)]],{hint:'逐個取 A 與 B 的隸屬度最小值：rᵢⱼ = min(aᵢ, bⱼ)。先試算第一行，再完成矩陣。'});
+ add('03',98,[[p(2,8),im(2)]],{hint:'採用最大—最小合成：sᵢₖ = maxⱼ min(qᵢⱼ, rⱼₖ)。先取各組的較小值，再選最大值。'});
+ add('03',102,[[p(2,6),im(1)],[p(2,13)]],{questionPage:101});
+ add('03',103,[[p(2,6),im(0)]]);
+ add('03',104,[[p(2,10),im(1)]]);
+ add('03',105,[[p(2,6,7)],[p(2,8)]]);
+ add('03',107,[[p(2,2,6),im(0)]],{questionPage:106,hint:'先利用 A 和 B 建立關係矩陣 R，再把 A′ 與 R 合成。'});
+ add('03',108,[[p(2,2),im(0)],[p(2,10)],[p(2,12,13)],[p(2,14)]],{questionPage:106});
+ add('04',34,seq(1,4).map(i=>[{text:2,paragraphs:[i],from:'例如'}]),{instruction:'根據初始與目標棋局，先計算各個啟發值。'});
+ add('04',37,[[{selector:'.c04-visuals'}]],{questionPage:36,hint:'每次比較候選節點的 f(n)=g(n)+h(n)，再選擇下一個擴展節點。'});
+ add('05',20,[...seq(1,6).map(row=>[t(4+row*2)]),...seq(1,6).map(row=>[t(19+row*2)])],{instruction:'先完成兩組編碼轉換，再逐列核對。'});
+ add('05',23,[[t(4),im(2),im(3)]],{instruction:'先判斷左側轉換是否保證非負，再查看右側做法。'});
+ add('05',30,[seq(28,38).map(t),seq(40,50).map(t),[im(0)]],{instruction:'先算選擇概率與累積概率，再判斷兩個隨機數會選中誰。'});
+ add('05',32,[[p(2,6)],[p(2,7)],[p(2,9)],[p(2,10)]]);
+ add('05',33,[[p(2,7)],[p(2,8)]]);
+ add('05',34,[[p(2,7)],[p(2,8)]]);
+ add('06',38,[[t(3),im(0)],[t(2)]],{questionPage:37,instruction:'先根據加工時間表安排工序，再查看調度圖與分析。'});
+ window.COURSE_EXERCISE_PLANS=plans;
+})();

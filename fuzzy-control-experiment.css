@@ -1,0 +1,129 @@
+#lesson > .fuzzy-control-experiment {
+  padding: 14px var(--gutter, 28px) 10px !important;
+  gap: 9px;
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+.fuzzy-control-experiment .supp-heading { flex: none; display: flex; justify-content: space-between; align-items: baseline; gap: 15px; padding-bottom: 8px; border-bottom: 1px solid var(--line, #ded4d9); }
+.fuzzy-control-experiment .supp-heading h1 { margin: 0; font-size: 33px !important; }
+.fuzzy-control-experiment .fce-frames { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-right: 4px; }
+.fuzzy-control-experiment .fce-frame { display: flex; flex-direction: column; gap: 12px; }
+.fuzzy-control-experiment [data-fb-frame][hidden] { display: none !important; }
+.fuzzy-control-experiment .fce-copy h2 { margin: 0 0 7px; color: var(--wine, #7d294d); font-size: 28px; font-weight: 650; line-height: 1.3; }
+.fuzzy-control-experiment .fce-copy p { margin: 0; font-size: 23px; line-height: 1.5; }
+.fuzzy-control-experiment .fce-body { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.fuzzy-control-experiment .fce-note { margin: 0; font-size: 19px; line-height: 1.5; color: #514a50; }
+.fuzzy-control-experiment .fce-formula { padding: 12px 16px; border-left: 4px solid #9a5470; background: #f9f3f6; font-size: 22px; line-height: 1.65; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.fuzzy-control-experiment .fce-figure { display: block; min-width: 0; overflow-x: auto; padding-block: 5px; }
+.fuzzy-control-experiment .fce-graphic { display: block; width: 100%; height: auto; max-height: 340px; color: #242024; font-family: Arial, 'PingFang TC', 'Microsoft JhengHei', sans-serif; font-size: 21px; }
+.fce-graphic .fce-axis { fill: none; stroke: #6d6168; stroke-width: 1.6; }
+.fce-graphic .fce-grid { fill: none; stroke: #ddd5d9; stroke-width: 1; stroke-dasharray: 4 6; }
+.fce-graphic .fce-axis-label { fill: #514a50; font-size: 19px; }
+.fce-graphic .fce-input-label { font-size: 23px; font-weight: 650; }
+.fce-graphic .fce-point-label { font-size: 23px; font-weight: 650; paint-order: stroke; stroke: #fff; stroke-width: 5px; stroke-linejoin: round; }
+.fce-graphic .fce-input-value { fill: #312a2e; font-size: 20px; font-weight: 650; }
+.fce-graphic .fce-input-mark { fill: none; stroke: #594550; stroke-width: 1.6; stroke-dasharray: 7 5; }
+.fce-graphic .fce-color-0 { fill: #42747b; }
+.fce-graphic .fce-color-1 { fill: #842b50; }
+.fce-graphic .fce-color-2 { fill: #a76b08; }
+.fce-graphic .fce-set-label { fill: #4c3d46; font-size: 21px; font-weight: 650; }
+.fce-graphic .fce-degree-label { fill: #654557; font-size: 21px; }
+.fce-graphic .fce-area-label { fill: #30242a; font-size: 20px; font-weight: 650; }
+.fce-graphic .fce-center-mark { fill: none; stroke: #75636c; stroke-width: 1.6; stroke-dasharray: 5 5; }
+.fce-graphic .fce-centroid-mark { fill: none; stroke: #842b50; stroke-width: 3; }
+.fce-graphic .fce-centroid-label { fill: #842b50; font-size: 21px; font-weight: 650; }
+.fuzzy-control-experiment .fce-table-scroll { overflow-x: auto; min-width: 0; }
+.fuzzy-control-experiment .fce-table { width: 100%; border-collapse: collapse; font-size: 21px; line-height: 1.4; }
+.fuzzy-control-experiment .fce-table th,
+.fuzzy-control-experiment .fce-table td { padding: 12px 14px; text-align: center; border: 1px solid #d9cbd2; vertical-align: middle; }
+.fuzzy-control-experiment .fce-table thead th { background: #f5eaf0; color: #61243f; font-weight: 650; }
+.fuzzy-control-experiment .fce-table tbody th { background: #faf6f8; font-weight: 550; }
+.fuzzy-control-experiment .fce-rule-number { display: inline-block; margin-right: 8px; color: #73616b; font-size: 17px; }
+.fuzzy-control-experiment .fce-rule-active { display: flex; flex-direction: column; gap: 7px; color: #7d294d; }
+.fuzzy-control-experiment .fce-rule-active strong,
+.fuzzy-control-experiment .fce-rule-zero strong { display: block; font-size: 20px; font-weight: 550; white-space: nowrap; }
+.fuzzy-control-experiment .fce-rule-zero { color: #6f676c; }
+.fuzzy-control-experiment .fce-flow { display: flex; align-items: center; justify-content: space-between; gap: 9px; margin-block: 40px; font-size: 26px; }
+.fuzzy-control-experiment .fce-flow div { flex: 1; padding: 22px 10px; border: 1px solid #d7c4ce; border-radius: 9px; background: #fbf5f8; text-align: center; line-height: 1.55; }
+.fuzzy-control-experiment .fce-flow > span { color: #956277; }
+.fuzzy-control-experiment .fce-callout { display: flex; flex-direction: column; gap: 8px; border: 1px solid #ddc88f; background: #fff8e7; padding: 14px 17px; font-size: 22px; line-height: 1.5; }
+.fuzzy-control-experiment .fce-checklist { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.fuzzy-control-experiment .fce-checklist span { border: 1px solid #ddcdd5; padding: 22px 14px; font-size: 22px; text-align: center; background: #faf5f8; }
+.fuzzy-control-experiment .fce-practice-answer { border: 1px solid #d5c5ce; padding: 14px 18px; font-size: 21px; line-height: 1.6; }
+.fuzzy-control-experiment .fce-practice-answer summary { cursor: pointer; color: #7d294d; font-weight: 600; }
+.fuzzy-control-experiment .fce-practice-answer p { margin: 12px 0 0; }
+.fuzzy-control-experiment .fce-solution-steps { margin: 0; padding-left: 30px; font-size: 20px; line-height: 1.65; }
+.fuzzy-control-experiment .fce-solution-steps li { padding: 10px 0 16px 5px; border-bottom: 1px solid #e4d7de; }
+.fuzzy-control-experiment .fce-solution-steps h3 { margin: 0 0 6px; font-size: 22px; color: #7d294d; }
+.fuzzy-control-experiment .fce-solution-steps p { margin: 5px 0 0; }
+.fuzzy-control-experiment .fce-review-link { align-self: flex-start; margin: 8px 0 12px; color: #7d294d; font-size: 21px; text-decoration: underline; text-underline-offset: 4px; }
+.fuzzy-control-experiment .fce-task-list { margin: 0; padding-left: 30px; font-size: 22px; line-height: 1.65; }
+.fuzzy-control-experiment .fce-task-list li + li { margin-top: 7px; }
+.fuzzy-control-experiment .fce-definition-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(250px, 0.8fr); gap: 22px; align-items: start; }
+.fuzzy-control-experiment .fce-definition-grid h3,
+.fuzzy-control-experiment .fce-self-test h3 { margin: 0 0 9px; color: #7d294d; font-size: 22px; }
+.fuzzy-control-experiment .fce-output-table th,
+.fuzzy-control-experiment .fce-output-table td { padding: 8px 12px; }
+.fuzzy-control-experiment .fce-output-def .fce-note { margin-top: 8px; }
+.fuzzy-control-experiment .fce-self-test { padding-top: 10px; }
+.fuzzy-control-experiment .fce-self-test > p { margin: 0 0 12px; font-size: 21px; line-height: 1.5; }
+.fuzzy-control-experiment .fce-short-solution li { padding: 5px 0 9px 5px; }
+.fuzzy-control-experiment .fce-active-rules-table th,
+.fuzzy-control-experiment .fce-active-rules-table td { padding: 7px 14px; }
+.fuzzy-control-experiment .fce-final-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 26px; align-items: start; }
+.fuzzy-control-experiment .fce-final-grid .fce-self-test { padding-top: 0; }
+.fuzzy-control-experiment .fce-final-grid .fce-review-link { display: inline-block; }
+.fuzzy-control-experiment > .lesson-steps { flex-shrink: 0; }
+@media (max-height: 740px) and (min-width: 761px) {
+  .fuzzy-control-experiment .fce-copy p { font-size: 21px; }
+  .fuzzy-control-experiment .fce-graphic { max-height: 205px; }
+  .fuzzy-control-experiment .fce-formula { padding: 9px 14px; font-size: 20px; }
+}
+@media (max-width: 760px) {
+  #lesson > .fuzzy-control-experiment { height: auto !important; overflow: visible; padding: 18px 16px 82px !important; }
+  .fuzzy-control-experiment .fce-frames { flex: none; overflow: visible; padding-right: 0; }
+  .fuzzy-control-experiment .supp-heading h1 { font-size: 27px !important; }
+  .fuzzy-control-experiment .supp-heading { display: block; }
+  .fuzzy-control-experiment .fce-copy h2 { font-size: 23px; }
+  .fuzzy-control-experiment .fce-copy p { font-size: 20px; line-height: 1.6; }
+  .fuzzy-control-experiment .fce-note { font-size: 17px; }
+  .fuzzy-control-experiment .fce-formula { font-size: 19px; padding: 11px 13px; }
+  .fuzzy-control-experiment .fce-graphic { width: 880px; max-width: none; max-height: none; }
+  .fuzzy-control-experiment .fce-figure::before { content: '左右滑動看完整圖'; display: block; position: sticky; left: 0; margin-bottom: 8px; color: #70626a; font-size: 14px; }
+  .fuzzy-control-experiment .fce-table { min-width: 670px; font-size: 18px; }
+  .fuzzy-control-experiment .fce-table-scroll::before { content: '左右滑動看完整表格'; display: block; position: sticky; left: 0; margin-bottom: 8px; color: #70626a; font-size: 14px; }
+  .fuzzy-control-experiment .fce-table th,
+  .fuzzy-control-experiment .fce-table td { padding: 11px 10px; }
+  .fuzzy-control-experiment .fce-flow { flex-direction: column; gap: 5px; margin-block: 12px; font-size: 22px; }
+  .fuzzy-control-experiment .fce-flow div { width: 100%; padding: 12px; }
+  .fuzzy-control-experiment .fce-flow > span { transform: rotate(90deg); }
+  .fuzzy-control-experiment .fce-callout { font-size: 19px; }
+  .fuzzy-control-experiment .fce-checklist { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fuzzy-control-experiment .fce-checklist span { font-size: 19px; padding: 18px 9px; }
+  .fuzzy-control-experiment .fce-practice-answer { font-size: 19px; }
+  .fuzzy-control-experiment .fce-solution-steps { font-size: 18px; padding-left: 24px; }
+  .fuzzy-control-experiment .fce-solution-steps h3 { font-size: 20px; }
+  .fuzzy-control-experiment .fce-definition-grid { grid-template-columns: 1fr; gap: 20px; }
+  .fuzzy-control-experiment .fce-final-grid { grid-template-columns: 1fr; gap: 20px; }
+  .fuzzy-control-experiment .fce-domain-table,
+  .fuzzy-control-experiment .fce-output-table { min-width: 0; }
+  .fuzzy-control-experiment .fce-output-def .fce-table-scroll::before { display: none; }
+  .fuzzy-control-experiment .fce-task-list { padding-left: 24px; font-size: 20px; }
+  .fuzzy-control-experiment .fce-self-test > p { font-size: 19px; }
+}
+@media print {
+  #lesson > .fuzzy-control-experiment { height: auto !important; overflow: visible !important; }
+  .fuzzy-control-experiment .fce-frames { overflow: visible; flex: none; }
+  .fuzzy-control-experiment .fce-frame,
+  .fuzzy-control-experiment [data-fb-frame][hidden] { display: flex !important; break-inside: avoid; page-break-inside: avoid; margin: 20px 0 30px; }
+  .fuzzy-control-experiment .fce-figure,
+  .fuzzy-control-experiment .fce-table-scroll { overflow: visible; }
+  .fuzzy-control-experiment .fce-graphic { width: 100%; height: auto; max-height: none; }
+  .fuzzy-control-experiment .fce-figure::before { display: none; }
+  .fuzzy-control-experiment .fce-table-scroll::before { display: none; }
+  .fuzzy-control-experiment [data-fb-controls],
+  .fuzzy-control-experiment .lesson-steps { display: none !important; }
+  .fuzzy-control-experiment .fce-copy p,
+  .fuzzy-control-experiment .fce-formula,
+  .fuzzy-control-experiment .fce-table { font-size: 14pt; }
+}

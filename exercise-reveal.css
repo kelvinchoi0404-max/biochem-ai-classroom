@@ -1,0 +1,17 @@
+/* Hidden answers retain their measured layout; child styles cannot reveal them. */
+.exercise-concealed,.exercise-concealed *{visibility:hidden!important;pointer-events:none!important;user-select:none!important}
+.exercise-controls[hidden],.exercise-question-preview[hidden],.exercise-hint[hidden]{display:none!important}
+.exercise-controls{display:flex;align-items:center;justify-content:center;gap:10px;min-width:0;margin:0 12px;font-size:15px;white-space:nowrap}
+.exercise-controls button{border:1px solid #bfc4c7;border-radius:5px;padding:9px 13px;min-height:40px;line-height:1.1;font-size:inherit}
+.exercise-controls button:disabled{opacity:.45;cursor:default}
+.exercise-controls .exercise-next,.exercise-controls .exercise-next:hover:not(:disabled){background:#7a003c;color:white;border-color:#7a003c;font-weight:650}
+.exercise-progress{font-variant-numeric:tabular-nums;color:#555c61;font-size:14px;min-width:36px}
+.exercise-page{position:relative}
+.exercise-question-preview{position:absolute!important;inset:0!important;z-index:3;background:white!important;width:100%!important;height:100%!important;max-height:none!important;min-height:0!important;margin:0!important;pointer-events:none}
+.exercise-hint{position:absolute;z-index:4;left:10%;right:10%;bottom:14%;padding:28px 34px;border-left:6px solid #ffbd59;background:#f6f2eb;box-shadow:0 8px 40px #0001;font-size:clamp(22px,2.2vw,32px);line-height:1.65;color:#25282b}
+.exercise-page [data-answer-step]:not(.exercise-concealed){animation:answer-in .18s ease-out}
+@keyframes answer-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.exercise-page [data-answer-step]{animation:none!important}}
+@media(min-width:761px) and (max-width:1250px){.has-exercise .footer-left{gap:8px;padding-left:15px}.has-exercise #chapter-label{display:none}.has-exercise .page-controls #fullscreen{display:none}.has-exercise .page-controls button{padding:0 15px}.has-exercise .gold-button{min-width:100px}.exercise-controls{gap:7px;margin:0 5px}.exercise-controls button{padding:8px 10px}.has-exercise .footer-learning button{padding:0 10px}}
+@media(max-width:760px){body.has-exercise{--footer:112px}.has-exercise .course-footer{padding-top:54px}.exercise-controls{position:absolute;top:5px;left:0;right:0;height:44px;margin:0 8px;justify-content:flex-end;gap:8px;font-size:15px}.exercise-progress{margin-right:auto}.exercise-controls button{min-height:42px;padding:8px 12px}.exercise-question-preview{min-height:100%!important;height:auto!important}.exercise-hint{position:relative;left:auto;right:auto;bottom:auto;margin:20px 0;padding:20px;font-size:21px}}
+@media print{.exercise-controls,.exercise-question-preview,.exercise-hint{display:none!important}}

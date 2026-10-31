@@ -1,0 +1,145 @@
+window.COURSE_READINGS = [
+  {
+    "page": 5,
+    "title": "人工智能的範圍",
+    "originalTitle": "什么是人工智能 (AI)？",
+    "publisher": "IBM Think",
+    "language": "簡體中文",
+    "url": "https://www.ibm.com/cn-zh/think/topics/artificial-intelligence",
+    "focus": "先讀開首定義，再找出一個感知、學習或決策的例子。",
+    "why": "從常見任務說明 AI 的範圍，配合本頁的人工智能定義。",
+    "note": "建議先讀定義與應用；後半商業產品及進階模型內容可略讀。"
+  },
+  {
+    "page": 8,
+    "title": "機器人如何學習？",
+    "originalTitle": "機器人的學習",
+    "publisher": "科技大觀園",
+    "language": "繁體中文",
+    "url": "https://scitechvista.nat.gov.tw/Article/C000008/detail?ID=21c02e3b-ad0d-431e-af66-909efde0a4b8",
+    "focus": "把感測、規劃與動作連起來，找出機器人需要學習的原因。",
+    "why": "以機械臂等具體設備連接本頁的行為能力。",
+    "note": "2014 年的科普文章，適合概念導讀；其中產業現況不代表今天的完整發展。"
+  },
+  {
+    "page": 9,
+    "title": "驗證碼與圖靈測試",
+    "originalTitle": "什么是 CAPTCHA?",
+    "publisher": "IBM Think",
+    "language": "簡體中文",
+    "url": "https://www.ibm.com/cn-zh/think/topics/captcha",
+    "focus": "比較網站驗證碼與圖靈測試：誰提出問題？誰判斷對方是人還是機器？",
+    "why": "從熟悉的網站驗證碼延伸到人機區分，讓本頁測試概念連接日常使用經驗。",
+    "note": "CAPTCHA 由程式辨別使用者，與人類評判機器的圖靈測試方向不同；通過驗證碼並不證明通用智能。"
+  },
+  {
+    "page": 14,
+    "title": "AI 名稱的起點",
+    "originalTitle": "The Birth of ‘Artificial Intelligence’",
+    "publisher": "Dartmouth",
+    "language": "英文圖文",
+    "url": "https://home.dartmouth.edu/news/2026/06/birth-artificial-intelligence",
+    "focus": "從 1956 年的夏季研究聚會，理解 AI 如何成為一個研究領域。",
+    "why": "由會議所在地的大學回顧其歷史，配合本頁達特茅斯會議。",
+    "note": "歷史延伸閱讀；本頁合照的實際拍攝年代另見圖片解說。"
+  },
+  {
+    "page": 17,
+    "title": "神經網絡借鑑了甚麼？",
+    "originalTitle": "AI晶片在模仿人腦嗎？什麼是類神經網路晶片",
+    "publisher": "科技大觀園",
+    "language": "繁體中文",
+    "url": "https://scitechvista.nat.gov.tw/Article/C000009/detail?ID=d6cffa4b-0019-4a37-8a66-c20f40cb720d",
+    "focus": "重點讀「類神經網路模仿的，其實不是整個大腦」。",
+    "why": "透過研究者專訪說明神經元、權重和輸出的抽象關係，適合連接主義的概念。",
+    "note": "晶片部分可作進階閱讀；人工神經網絡只是對部分生物機制的抽象。"
+  },
+  {
+    "page": 19,
+    "title": "AlphaGo 如何進步？",
+    "originalTitle": "AlphaGo Zero: Starting from scratch",
+    "publisher": "Google DeepMind",
+    "language": "英文圖文",
+    "url": "https://deepmind.google/blog/alphago-zero-starting-from-scratch/",
+    "focus": "比較 AlphaGo 與 AlphaGo Zero 的訓練資料，以及自我對弈的作用。",
+    "why": "由原研究團隊向公眾解說，自我對弈與圖表可補充本頁博弈案例。",
+    "note": "2017 年的特定系統；沒有使用人類棋譜不等於沒有人設計規則或算法。"
+  },
+  {
+    "page": 22,
+    "title": "AI、機器學習與深度學習",
+    "originalTitle": "AI、机器学习、深度学习与神经网络",
+    "publisher": "IBM Think",
+    "language": "簡體中文",
+    "url": "https://www.ibm.com/cn-zh/think/topics/ai-vs-machine-learning-vs-deep-learning-vs-neural-networks",
+    "focus": "畫出 AI、機器學習、神經網絡與深度學習的包含關係。",
+    "why": "以概念比較釐清常混用的名詞，與本頁機器學習及網絡圖相互對照。",
+    "note": "先讀概念比較；產品介紹可略讀。"
+  },
+  {
+    "page": 29,
+    "title": "AI 為甚麼也會有偏見？",
+    "originalTitle": "AI不中立？─探討AI偏見帶來的影響",
+    "publisher": "科技大觀園",
+    "language": "繁體中文",
+    "url": "https://scitechvista.nat.gov.tw/Article/c000008/detail?ID=e127c0b0-9bc2-470d-ab47-404d877e64cf",
+    "focus": "辨認資料及人的選擇，如何影響看似客觀的輸出。",
+    "why": "以具體例子解說偏見，便於理解本頁為何需要人工智能倫理。",
+    "note": "2018 年的案例作概念討論；不以舊系統的表現概括今天所有 AI。"
+  },
+  {
+    "page": 32,
+    "title": "從倫理原則到實際做法",
+    "originalTitle": "什么是人工智能伦理？",
+    "publisher": "IBM Think",
+    "language": "簡體中文",
+    "url": "https://www.ibm.com/cn-zh/think/topics/ai-ethics",
+    "focus": "選一項公平、透明或問責原則，找出相應的實際做法。",
+    "why": "用可理解的問題連接本頁的倫理原則與治理措施。",
+    "note": "作倫理概念導讀；外地法規與企業做法不等同澳門校方安排。"
+  }
+  ,
+  {
+    "chapter": "02",
+    "page": 48,
+    "title": "框架與 Python 的繼承",
+    "originalTitle": "9.5. 繼承（Inheritance）",
+    "publisher": "Python 官方教學",
+    "language": "繁體中文",
+    "url": "https://docs.python.org/zh-tw/3.12/tutorial/classes.html#inheritance",
+    "readingTime": "選讀約 3 分鐘",
+    "focus": "先讀第 9.5 節開首，觀察子類別找不到某個屬性時，怎樣沿父類別繼續查找。這可用來對照本頁框架的繼承性。",
+    "example": "「中學生」可以繼承「學生」的共同屬性；「學生」裡面存放一個「班級」物件，則是組合。想想前面的學生框架屬於哪一種關係。",
+    "note": "讀到單一繼承即可，多重繼承可略過。Python 類別是程式設計機制，框架是知識表示方法；兩者可比較，但不能直接畫上等號。",
+    "why": "承接框架與 Python 對照頁，幫學生區分「是一種」與「包含一個」兩種關係。"
+  },
+  {
+    "chapter": "02",
+    "page": 53,
+    "title": "在真實知識庫找到 H₂O",
+    "originalTitle": "Help：陳述",
+    "publisher": "Wikidata（維基資料）",
+    "language": "中文",
+    "url": "https://www.wikidata.org/wiki/Help:Statements/zh?uselang=zh-tw",
+    "readingTime": "選讀與查找約 3 分鐘",
+    "focus": "看介紹中的「項目—屬性—值」，再打開「水」的資料頁，找到化學式。把真實資料和本頁的三元組寫法對照。",
+    "example": "（水，化學式，H₂O）。在「化學式」下展開參考資料，還可以看到資料來源；這樣就能追查這個值的出處。",
+    "note": "「水」的條目很長，只需看化學式與其參考資料。知識庫除了關聯不同實體，也能記錄文字、數字等屬性值；看見一項陳述仍要留意它的來源。",
+    "related": [{"title": "查看「水」的化學式與來源", "url": "https://www.wikidata.org/wiki/Q283?uselang=zh-tw#P274"}],
+    "why": "用生化班熟悉的水連接三元組、屬性值和證據來源，無需掌握查詢語言。"
+  },
+  {
+    "chapter": "02",
+    "page": 55,
+    "title": "搜尋器怎樣讀懂一份食譜？",
+    "originalTitle": "Google 搜尋中的結構化資料標記簡介",
+    "publisher": "Google 搜尋中心",
+    "language": "繁體中文",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=zh-tw#how-structured-data-works-in-google-search",
+    "readingTime": "選讀約 3 分鐘",
+    "focus": "看食譜範例和搜尋結果示意，找出食材、烹飪時間等欄位，理解網頁如何把散落的資訊整理成機器可讀的資料。",
+    "example": "「這杯飲品需時 3 分鐘」是敘述；把它放進「總時間」欄位，程式就較容易辨認它表示甚麼。對照本頁：欄位的規定與一份食譜的具體值，分別屬於哪個層次？",
+    "note": "只讀開首、運作方式及食譜圖即可，完整程式碼和網站優化數據可略過。結構化標記可協助理解資料，本身不等於完整知識圖譜，也不保證特定搜尋展示。",
+    "why": "用熟悉的搜尋結果連接模式層、資料層及結構化資訊，保持入門難度。"
+  }
+];

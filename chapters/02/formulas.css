@@ -1,0 +1,52 @@
+/* Formula emphasis v6: exact source text, larger notation and quiet editorial panels. */
+.c02-page{--math-ink:#780038;--math-wash:#f8f2e9;--math-size:1.14em}
+.math-formula,.math-operator,.math-term{color:var(--math-ink,var(--wine));font-weight:650;letter-spacing:0;font-variant-numeric:lining-nums tabular-nums}
+.math-formula{font-size:var(--math-size);line-height:1.25;font-family:Roboto,'PingFang TC','Microsoft JhengHei',sans-serif;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.math-formula .key-term,.math-operator .key-term,.math-term .key-term{color:inherit;font-weight:inherit}
+.math-term{font-size:1.06em}
+.math-operator{font-size:1.3em;line-height:1;font-family:Roboto,'Arial Unicode MS',sans-serif}
+.math-glyph{font-size:1.1em;font-weight:700;line-height:1}
+.math-display{display:block;width:fit-content;max-width:100%;font-size:1.28em;line-height:1.32;padding:12px 18px;background:var(--math-wash);border-left:4px solid var(--gold);overflow-wrap:normal}
+.c02-page .type-heading{letter-spacing:-.018em}.c02-page .type-heading .math-operator{font-weight:750}
+.c02-page-14 .c02-composition{gap:11px}.c02-page-14 .source-fragment{grid-template-columns:30% minmax(0,1fr);align-items:center;padding-top:11px;gap:24px}
+.c02-page-14 .type-heading .math-operator{display:inline-block;min-width:1.35em;text-align:center;font-size:1.65em;vertical-align:-.06em;color:var(--wine)}
+.c02-page-14 .type-heading{font-weight:550}.c02-page-14 .math-formula{font-size:1.16em}
+.c02-page-16 .math-display{font-size:1.18em;padding:18px}.c02-page-16 [data-paragraph='2'],.c02-page-16 [data-paragraph='5']{border:0;padding-top:0}
+.c02-page-17{--math-size:1.1em}.c02-page-17 .paragraph{margin-bottom:9px}.c02-page-17 .g0 .math-formula{white-space:nowrap}.c02-page-17 .g1 [data-paragraph='10']{padding:12px 14px;background:var(--math-wash);border-left:3px solid var(--gold)}
+.c02-page-18 .g1 [data-paragraph='4']{font-size:1em;margin-bottom:20px}.c02-page-18 .math-display{font-size:1.12em;padding:16px 12px}
+.c02-page-19 .g1 [data-paragraph='8']{font-size:1.25em;letter-spacing:.08em}
+.c02-page-20 .exercise-pair{grid-template-columns:30% minmax(0,1fr)}.c02-page-20 .exercise-answer .math-formula{font-size:1.16em}.c02-page-20 .exercise-answer{padding-left:18px;border-left:3px solid var(--gold)}
+.c02-page-21 .g1{border:0;padding-top:0}.c02-page-21 .g1 .source-fragment{gap:22px 30px}.c02-page-21 .g1 [data-paragraph='2'],.c02-page-21 .g1 [data-paragraph='3']{font-size:1em;margin:0}.c02-page-21 .math-display{font-size:1.6em;padding:24px 22px;width:100%;border-left:5px solid var(--wine);white-space:pre;line-height:1.2}.c02-page-21 .g2{border-color:var(--line);padding-top:22px}.c02-page-21 .g1 .type-heading{font-weight:450;color:var(--ink)}
+.c02-page-23 .g1 .math-formula,.c02-page-24 .g2 .math-formula{font-size:1.24em}.c02-page-24 .g2{background:var(--math-wash);border:0;padding:22px 26px}
+.c02-page-27{--math-size:1.1em}.c02-page-27 .c02-composition{grid-template-columns:1.05fr 1fr;column-gap:28px}.c02-page-27 .g0 .paragraph:not(:first-child){border-top:1px solid var(--line);padding-top:10px}.c02-page-27 .paragraph{line-height:1.35}
+.c02-page-31 .c02-composition{gap:36px}.c02-page-31 .g0,.c02-page-31 .g1{padding:20px 22px;background:var(--math-wash);border-top:3px solid var(--gold)}.c02-page-31 .type-heading{margin-bottom:22px}.c02-page-31 .paragraph{margin-bottom:22px}.c02-page-31 .math-formula{font-size:1.13em;line-height:1.4}.c02-page-31 [data-paragraph='2'],.c02-page-31 [data-paragraph='6']{border-top:1px solid #ded1c5;padding-top:18px}
+.c02-page-32 .math-formula{font-size:1.13em}.c02-page-32 .g0,.c02-page-32 .g1{padding-top:18px}.c02-page-32 [data-paragraph='2'],.c02-page-32 [data-paragraph='7']{background:var(--math-wash);padding:12px 16px;border-left:3px solid var(--gold)}
+.c02-page-34{--math-size:1.1em}.c02-page-34 .math-display{font-size:1.13em;padding:14px 16px;white-space:normal}.c02-page-34 .g1 .paragraph{padding-bottom:12px;margin-bottom:12px}
+.c02-page-38 .math-operator{font-size:1em;font-weight:800;letter-spacing:.035em;color:#67002e}.c02-page-38 .math-term{font-size:1.07em;font-weight:750}.c02-page-38 .rule-column{padding-top:10px}.c02-page-38 .key-term{font-weight:650}
+.c02-page-45 .math-term{font-size:1.08em}
+.c02-page-53 .g1 .paragraph{font-size:1.08em;margin-bottom:26px}.c02-page-53 .math-display{font-size:1.25em;padding:18px 22px}.c02-page-53 .g1{border:0;padding-top:0}.c02-page-54 [data-paragraph='4'] .math-formula{font-size:1.25em}
+/* Photographs share the reading area with their corresponding source paragraphs. */
+.c02-page-7 .c02-composition{grid-template-columns:1fr 1fr;align-content:center;row-gap:20px}.c02-page-7 .g3{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}.c02-page-7 .g3 .lesson-figure{height:130px}.c02-page-7 .g3 img{object-fit:contain}.c02-page-7 .g3 .source-fragment{font-size:var(--c02-small)}
+.c02-page-25 .c02-composition{grid-template-rows:auto minmax(0,1fr);align-content:stretch;gap:14px}.c02-page-25 .source-fragment{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;font-size:var(--c02-body)}.c02-page-25 .type-heading{grid-column:1/-1;margin-bottom:10px}.c02-page-25 .paragraph:not(.type-heading){padding:14px 0 0 36px;margin-top:8px}.c02-page-25 .paragraph:not(.type-heading):before{top:18px}.c02-page-25 .photograph img{object-fit:cover;object-position:center 66%}.c02-page-25 .photograph{overflow:hidden}
+.c02-page-26 .c02-composition{grid-template-columns:1.05fr 1fr;column-gap:34px;align-content:stretch;row-gap:20px}.c02-page-26 .g2{display:grid;grid-template-rows:auto minmax(0,1fr);align-self:stretch;gap:12px}.c02-page-26 .g2 .lesson-figure{height:100%;min-height:0}.c02-page-26 .g2 img{object-fit:contain}.c02-page-26 .source-fragment{font-size:var(--c02-small)}
+@media(min-width:1600px){.c02-page-21 .math-display{padding:34px 28px}.c02-page-7 .g3 .lesson-figure{height:190px}.c02-page-25 .c02-composition{gap:24px}.c02-page-31 .g0,.c02-page-31 .g1{padding:28px 30px}}
+@media(min-width:761px) and (max-width:1100px){.c02-page-12{--math-size:1.08em}.c02-page-14 .source-fragment{grid-template-columns:31% minmax(0,1fr);gap:18px}.c02-page-17 .c02-composition{column-gap:22px}.c02-page-21 .math-display{font-size:1.5em;padding:22px 16px}.c02-page-31 .c02-composition{gap:24px}.c02-page-31 .g0,.c02-page-31 .g1{padding:16px}.c02-page-34 .math-display{padding:10px}.c02-page-7 .g3{grid-template-columns:1fr;gap:6px}.c02-page-7 .g3 .lesson-figure{height:80px}.c02-page-26 .c02-composition{column-gap:24px}.c02-page-53 .math-display{padding:14px}}
+@media(max-width:760px){.math-display{font-size:1.16em!important;padding:14px!important}.c02-page-21 .math-display{white-space:normal}.c02-page-25 .source-fragment{display:block}.c02-page-7 .g3{display:block}.c02-page-7 .g3 .lesson-figure{height:180px}.c02-page-26 .g2{display:block}.c02-page-31 .c02-group{padding:18px}.c02-page-17 .g0 .math-formula{white-space:normal}}
+/* Keep predicate arguments and BNF terms intact while allowing breaks between units. */
+.math-unit{white-space:nowrap}
+.c02-page-14 .paragraph:not(.type-heading)>.math-formula{display:block;line-height:1.18;margin-top:3px}.c02-page-14 .source-fragment{padding-top:9px}.c02-page-14 .c02-composition{gap:9px}
+.c02-page-16 [data-paragraph='2']>.math-formula,.c02-page-16 [data-paragraph='5']>.math-formula{display:block;margin-top:12px;padding:16px 14px;background:var(--math-wash);border-left:4px solid var(--gold);font-size:1.15em}
+.c02-page-20 .exercise-pairs{height:100%;align-self:stretch;grid-template-rows:repeat(6,auto)}
+.c02-page-20 .exercise-pair{padding:5px 0}
+.c02-page-31 [data-paragraph='1'],.c02-page-31 [data-paragraph='5']{color:var(--ink);font-weight:450}.c02-page-31 [data-paragraph='1']>.key-term,.c02-page-31 [data-paragraph='5']>.key-term{color:var(--ink);font-weight:500}
+.c02-page-34 .math-display{width:100%;border-left:3px solid var(--gold)}
+.c02-page-7 .g3{grid-template-columns:1fr 1fr;gap:8px 18px}.c02-page-7 .uncertainty-title{grid-column:1/-1}.c02-page-7 .g3 .source-fragment{font-size:var(--c02-body)}.c02-page-7 .g3 .lesson-figure{height:116px}.c02-page-7 .uncertainty-example{align-self:center}.c02-page-7 .g3 .type-heading{margin:0}
+.c02-page-26 .c02-composition{grid-template-columns:minmax(0,.9fr) minmax(0,1.15fr) minmax(0,.72fr);grid-template-rows:1fr 1fr;align-content:stretch;align-items:start;gap:28px}
+.c02-page-26 .g0{grid-column:1;grid-row:1}.c02-page-26 .g1{grid-column:1;grid-row:2}.c02-page-26 .g2{grid-column:2;grid-row:1/3;display:block;align-self:start}.c02-page-26 .c02-composition>.photograph{grid-column:3;grid-row:1/3;align-self:stretch;height:100%}.c02-page-26 .photograph img{object-fit:contain}
+@media(min-width:1600px){.c02-page-14 .c02-composition{gap:16px}.c02-page-14 .source-fragment{padding-top:15px}.c02-page-7 .g3 .lesson-figure{height:156px}.c02-page-26 .c02-composition{gap:40px}}
+@media(min-width:761px) and (max-width:1100px){.c02-page-14 .source-fragment{grid-template-columns:30% minmax(0,1fr)}.c02-page-7 .g3{grid-template-columns:1fr 1fr}.c02-page-7 .g3 .source-fragment{font-size:23px}.c02-page-7 .g3 .lesson-figure{height:100px}.c02-page-26 .c02-composition{gap:22px}}
+@media(max-width:760px){.math-unit{white-space:normal}.c02-page-7 .g3{display:block}.c02-page-26 .c02-composition>.photograph{height:420px!important}}
+/* Tuples remain complete; example values sit directly below their source statements. */
+.c02-page-32 .math-formula{display:inline-block;white-space:nowrap}
+.c02-page-32 [data-paragraph='2']>.math-formula,.c02-page-32 [data-paragraph='3']>.math-formula,.c02-page-32 [data-paragraph='7']>.math-formula,.c02-page-32 [data-paragraph='8']>.math-formula{display:block;margin-top:6px;font-size:1.2em}
+@media(max-width:760px){.c02-page-32 .math-formula{white-space:normal}}

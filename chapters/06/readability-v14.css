@@ -1,0 +1,160 @@
+/* V14 — Chapter 06 authored reading rhythm. No source text, image or page split changes. */
+@media screen and (min-width:761px){
+  .readability-page.c06-page{--c06-body:clamp(25px,min(2.2vw,3.9dvh),38px);--c06-small:clamp(23px,min(1.96vw,3.5dvh),33px);--math-ink:#710034;--math-size:1.17em;padding-top:25px;padding-bottom:27px}
+  .readability-page.c06-page .page-heading{margin-bottom:25px}
+  .readability-page.c06-page .source-fragment{line-height:1.46;letter-spacing:-.012em}
+  .readability-page.c06-page.c06-density-compact .source-fragment{line-height:1.43}
+  .readability-page.c06-page .paragraph{margin-bottom:16px;text-wrap:pretty}
+  .readability-page.c06-page .paragraph:last-child{margin-bottom:0}
+  .readability-page.c06-page .type-heading{font-size:1.13em;line-height:1.28;font-weight:700;margin-bottom:17px}
+  .readability-page.c06-page .type-subheading{font-size:1.07em;line-height:1.35}
+  .readability-page.c06-page .concept-frame{outline:0;background:transparent}
+  .readability-page.c06-page .concept-frame .type-heading:first-child{border-bottom:0;padding-bottom:0}
+  .readability-page.c06-page .c06-group{border-top:2px solid #dfc291;padding-top:20px}
+  .readability-page.c06-page .c06-has-lead .g0{border:0;padding:0}
+  .readability-page.c06-page.c06-has-lead .g0{border:0;padding:0}
+  .readability-page.c06-page .math-formula,.readability-page.c06-page .math-term{font-weight:650}
+  .readability-page.c06-page .math-display{background:#fbf3e8;border-left:3px solid #dba648;color:#710034;line-height:1.5}
+  .readability-page.c06-page .c06-composition{column-gap:40px;row-gap:25px}
+
+  /* Entry and vocabulary: fewer repeated outlines, more intentional grouping. */
+  .readability-page.c06-hero .hero-content{max-width:min(100%,1080px);padding-top:40px;padding-bottom:42px;background:rgba(100,0,47,.91)}
+  .readability-page.c06-hero .chapter-kicker{margin-bottom:26px}
+  .readability-page.c06-hero h1{line-height:1.22;letter-spacing:-.035em}
+  .readability-page.c06-layout-agenda .source-fragment{gap:12px}
+  .readability-page.c06-layout-agenda .agenda-item{padding:16px 20px;border-left:3px solid transparent}
+  .readability-page.c06-layout-agenda .agenda-item:hover{border-left-color:var(--wine)}
+  .readability-page.c06-layout-objectives .source-fragment{gap:28px 46px}
+  .readability-page.c06-layout-objectives .paragraph{border-top:2px solid #dfc291;padding-top:20px}
+  .readability-page.c06-page-5 .c06-composition{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px}
+  .readability-page.c06-page-5 .g1{background:#faf6ee;padding:23px 25px;border-top:3px solid #b88733}
+  .readability-page.c06-page-5 .source-fragment{line-height:1.48}
+  .readability-page.c06-page-6 .g1{border-top-color:#7a003c}
+  .readability-page.c06-page-6 .g1 .paragraph{margin-bottom:12px}
+  .readability-page.c06-page-6 .g2{background:#f8f3f5;padding:20px 22px}
+  .readability-page.c06-page-7 .c06-composition{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:38px}
+  .readability-page.c06-page-7 .g0 [data-paragraph='1']{font-weight:450;padding:16px 18px;line-height:1.46}
+  .readability-page.c06-page-7 .g1{padding-top:20px}
+  .readability-page.c06-page-9 .c06-composition{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:38px}
+  .readability-page.c06-page-9 .c06-photo{max-height:400px}
+  .readability-page.c06-page-9 .c06-photo-copy .source-fragment{font-size:clamp(24px,min(2.05vw,3.7dvh),34px);line-height:1.45}
+  .readability-page.c06-page-9 [data-paragraph='5']{border-top:2px solid #dfc291;padding-top:14px;margin-top:18px}
+  .readability-page.c06-page-10 .c06-composition{gap:46px}
+  .readability-page.c06-page-10 .g1{border-top-color:#7a003c}
+
+  /* PSO: equations first, then named components with room for their subscripts. */
+  .readability-page.c06-layout-vectors .c06-composition{row-gap:26px}
+  .readability-page.c06-layout-vectors .c06-vector-list .source-fragment{gap:26px 40px}
+  .readability-page.c06-layout-vectors .c06-vector-list .paragraph{line-height:1.55;padding-top:19px}
+  .readability-page.c06-layout-vectors .math-formula{font-size:1.12em}
+  .readability-page.c06-layout-pso-equation .c06-composition{gap:24px}
+  .readability-page.c06-layout-pso-equation .c06-equation-band .math-display{font-size:1.27em;padding:16px 20px;line-height:1.52;border-left-width:4px}
+  .readability-page.c06-layout-pso-equation .c06-three-parts{grid-template-columns:1fr 1.1fr 1.25fr;gap:30px}
+  .readability-page.c06-layout-pso-equation .c06-group{padding-top:18px}
+  .readability-page.c06-layout-pso-equation .c06-equation-foot{padding-top:18px;border-top:1px solid #dfd7db}
+  .readability-page.c06-layout-pso-equation .c06-equation-foot .source-fragment{gap:34px;line-height:1.45}
+  .readability-page.c06-page-13 .c06-three-parts{grid-template-columns:.8fr 1.3fr 1fr}
+  .readability-page.c06-page-13 .c06-three-parts .c06-group:nth-child(2){border-top-color:#2485a6}
+  .readability-page.c06-page-13 .c06-three-parts .c06-group:nth-child(3){border-top-color:#37835f}
+  .readability-page.c06-page-14 .c06-four-parts{gap:25px 40px}
+  .readability-page.c06-page-14 .c06-four-parts .c06-group{background:#faf7f5;padding:18px 20px}
+  .readability-page.c06-page-15 .c06-composition{grid-template-columns:minmax(0,1.65fr) minmax(0,.9fr);gap:40px}
+  .readability-page.c06-page-15 .c06-step-copy .source-fragment{line-height:1.39}
+  .readability-page.c06-page-15 .c06-step-copy .paragraph{margin-bottom:15px;padding-left:43px}
+  .readability-page.c06-page-15 .c06-step-copy .paragraph:before{font-weight:750;color:#8a174b}
+  .readability-page.c06-page-16 .c06-composition{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr) minmax(0,1.3fr);gap:30px}
+  .readability-page.c06-page-16 .source-fragment{line-height:1.46}
+  .readability-page.c06-page-17 .c06-composition{gap:20px}
+  .readability-page.c06-page-17 .c06-four-parts{gap:20px 34px}
+  .readability-page.c06-page-17 .c06-four-parts .source-fragment{line-height:1.44}
+  .readability-page.c06-page-19 .c06-application-list .source-fragment{gap:20px 42px}
+  .readability-page.c06-page-19 .c06-application-list .paragraph{padding:16px 0 0;font-size:clamp(27px,2.42vw,40px)}
+  .readability-page.c06-page-20 .c06-composition{gap:24px}
+  .readability-page.c06-page-20 .c06-model-intro .source-fragment{line-height:1.44}
+  .readability-page.c06-page-21 .c06-composition{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px 36px}
+  .readability-page.c06-page-21 .c06-model-copy{padding-left:21px;border-left:2px solid #dfc291}
+  .readability-page.c06-page-21 .c06-model-copy .source-fragment{line-height:1.46}
+
+  /* ACO: conditions and quantities read as definitions, not a solid text slab. */
+  .readability-page.c06-page-24 .g0 .source-fragment{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+  .readability-page.c06-page-24 .g0 .paragraph{margin:0}
+  .readability-page.c06-page-24 .g1,.readability-page.c06-page-24 .g2{padding-top:18px}
+  .readability-page.c06-page-25 .g1,.readability-page.c06-page-25 .g2{padding:22px 24px;background:#faf6ee}
+  .readability-page.c06-page-25 .g2{background:#f8f2f5;border-top-color:#7a003c}
+  .readability-page.c06-page-26 .c06-composition{gap:20px}
+  .readability-page.c06-page-26 .source-fragment{font-size:var(--c06-small);line-height:1.45}
+  .readability-page.c06-page-26 .paragraph{margin-bottom:14px;line-height:1.45}
+  .readability-page.c06-page-26 .parameter-row{display:grid;grid-template-columns:235px minmax(0,1fr);column-gap:22px;border-top:1px solid #e2d7db;padding-top:11px;align-items:baseline}
+  .readability-page.c06-page-26 .parameter-symbol{font-size:1.08em;color:#710034;white-space:normal}
+  .readability-page.c06-page-26 .parameter-definition{min-width:0}
+  .readability-page.c06-page-26 [data-paragraph='7']{margin-top:18px;padding-top:12px;border-top:2px solid #dfc291}
+  .readability-page.c06-page-27 .c06-composition{gap:18px}
+  .readability-page.c06-page-27 .c06-probability-intro .source-fragment{gap:34px;line-height:1.42}
+  .readability-page.c06-page-27 .c06-probability-figure{max-width:820px}
+  .readability-page.c06-page-27 .c06-symbols{border-top:2px solid #dfc291;padding-top:15px}
+  .readability-page.c06-page-27 .c06-symbols .paragraph{line-height:1.4;margin-bottom:10px}
+  .readability-page.c06-layout-comparison-table .c06-table th,.readability-page.c06-layout-comparison-table .c06-table td{padding:20px 24px}
+  .readability-page.c06-layout-comparison-table .c06-table th{width:25%;background:#f6edef}
+  .readability-page.c06-layout-comparison-table .c06-table .source-fragment{line-height:1.47}
+  .readability-page.c06-page-28 .c06-composition{row-gap:22px}
+  .readability-page.c06-page-29 .c06-composition{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px}
+  .readability-page.c06-page-29 .c06-update-law .source-fragment{line-height:1.45}
+  .readability-page.c06-page-29 .c06-update-law .math-display{font-size:1.37em;padding:15px 18px;margin:17px 0}
+  .readability-page.c06-page-29 .c06-update-sum{padding:23px 24px;background:#faf6ee;border-top-color:#b88733}
+  .readability-page.c06-page-29 .c06-update-sum .c06-native-math{margin:24px 0}
+  .readability-page.c06-page-30 .c06-deposit-heading .source-fragment{display:block}
+  .readability-page.c06-page-30 .c06-deposit-heading .type-heading{margin-bottom:12px}
+  .readability-page.c06-page-30 .c06-deposit-legend{border-top:2px solid #dfc291;padding-top:17px}
+  .readability-page.c06-page-30 .c06-deposit-legend .source-fragment{grid-template-columns:.23fr 1.77fr;gap:28px;line-height:1.45}
+  .readability-page.c06-page-31 .c06-deposit-row{border-top:2px solid #dfc291;padding-top:18px;gap:15px 28px}
+  .readability-page.c06-page-31 .c06-deposit-row .type-heading{font-size:1.12em}
+  .readability-page.c06-page-31 .c06-deposit-row .c06-visuals{max-width:1050px}
+  .readability-page.c06-page-32 .c06-composition{gap:25px}
+  .readability-page.c06-page-32 .c06-table th{width:24%}
+  .readability-page.c06-page-33 .c06-composition{gap:44px}
+  .readability-page.c06-page-33 .g0 [data-paragraph='0']{line-height:1.33;margin-bottom:22px}
+  .readability-page.c06-page-34 .c06-composition{gap:46px}
+  .readability-page.c06-page-34 .g1{border-top-color:#7a003c}
+  .readability-page.c06-page-35 .c06-composition{grid-template-columns:repeat(3,minmax(0,1fr));gap:25px 36px}
+  .readability-page.c06-page-35 .source-fragment{font-size:var(--c06-small);line-height:1.48}
+  .readability-page.c06-page-35 .g3{background:#faf6ee;padding:20px 20px 22px}
+  .readability-page.c06-page-37 .c06-composition{gap:23px}
+  .readability-page.c06-page-37 .c06-data-intro .source-fragment{font-size:var(--c06-body);line-height:1.45}
+  .readability-page.c06-page-38 .c06-composition{grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);gap:46px}
+  .readability-page.c06-page-38 .c06-gantt-copy{border-top:2px solid #dfc291;padding-top:23px}
+  .readability-page.c06-page-38 .c06-gantt-copy .source-fragment{line-height:1.55}
+  .readability-page.c06-page-38 .c06-gantt-figure>.source-fragment{font-size:1.1em;line-height:1.35}
+}
+@media screen and (min-width:761px) and (max-width:1100px){
+  .readability-page.c06-page{--c06-body:25px;--c06-small:23px;padding-top:24px;padding-bottom:26px}
+  .readability-page.c06-page .page-heading{margin-bottom:23px}
+  .readability-page.c06-page .c06-composition{column-gap:29px;row-gap:22px}
+  .readability-page.c06-page .type-heading{margin-bottom:15px}
+  .readability-page.c06-page .c06-group{padding-top:17px}
+  .readability-page.c06-page .paragraph{margin-bottom:13px}
+  .readability-page.c06-page-5 .g1{padding:20px}
+  .readability-page.c06-page-7 .source-fragment{line-height:1.42}
+  .readability-page.c06-page-7 .g0 [data-paragraph='1']{padding:13px 15px;font-size:.98em}
+  .readability-page.c06-page-9 .c06-photo-copy .source-fragment{font-size:23px;line-height:1.42}
+  .readability-page.c06-layout-pso-equation .c06-equation-band .math-display{font-size:1.18em;padding:13px 16px}
+  .readability-page.c06-layout-pso-equation .c06-three-parts,.readability-page.c06-layout-pso-equation .c06-four-parts{gap:20px 28px}
+  .readability-page.c06-page-15 .c06-step-copy .paragraph{padding-left:34px;margin-bottom:13px}
+  .readability-page.c06-page-16 .source-fragment{line-height:1.42}
+  .readability-page.c06-page-17 .c06-four-parts .source-fragment{line-height:1.42}
+  .readability-page.c06-page-26 .parameter-row{grid-template-columns:214px minmax(0,1fr);column-gap:20px;padding-top:10px}
+  .readability-page.c06-page-26 .paragraph{line-height:1.39;margin-bottom:12px}
+  .readability-page.c06-page-27 .c06-symbols{padding-top:12px}
+  .readability-page.c06-layout-comparison-table .c06-table th,.readability-page.c06-layout-comparison-table .c06-table td{padding:18px 19px}
+  .readability-page.c06-page-29 .c06-update-law .math-display{font-size:1.3em;padding:13px 15px}
+  .readability-page.c06-page-29 .c06-update-sum{padding:21px}
+  .readability-page.c06-page-35 .g3{padding:18px 16px}
+}
+@media screen and (min-width:761px){
+  /* Five aligned definitions include two tall original equations. */
+  .readability-page.c06-page-26 .parameter-row{padding-top:8px}
+  .readability-page.c06-page-26 .paragraph{margin-bottom:10px}
+  .readability-page.c06-page-26 [data-paragraph='7']{margin-top:12px;padding-top:12px}
+}
+@media screen and (min-width:761px){
+  .readability-page.c06-page-38 .c06-gantt-figure>.source-fragment{font-size:clamp(26px,2.2vw,36px)}
+}

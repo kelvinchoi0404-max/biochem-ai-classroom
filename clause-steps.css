@@ -1,0 +1,40 @@
+/* Editable PPT text reflowed for the course shell; no rasterized lesson pages. */
+#lesson>.clause-step-page{display:flex!important;flex-direction:column;height:100%;padding:16px var(--gutter) 8px!important;gap:10px;background:#fff;overflow:hidden;line-height:1.15}
+.cs-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #d8d5d6;padding-bottom:12px;flex:none}
+.cs-heading h1{font-family:"PingFang TC","Microsoft JhengHei",sans-serif;font-size:clamp(28px,2.8vw,46px)!important;line-height:1.18!important;letter-spacing:-.025em;color:#7a003c;margin:0!important;font-weight:650!important}
+.cs-heading img{width:clamp(135px,13vw,220px);height:auto;object-fit:contain;flex:none}
+.cs-viewport{flex:1;min-height:0;position:relative;width:100%;overflow:visible}
+.cs-canvas{position:absolute;left:50%;top:0;width:900px;height:395px;transform-origin:top center}
+.cs-stack{display:contents}
+.cs-shape{position:absolute;margin:0;padding:0;box-sizing:border-box}
+.cs-shape p{margin:0;padding:0;white-space:pre;line-height:1.13;font-weight:400}
+.cs-shape p span{letter-spacing:0;font-variant-ligatures:none}
+.cs-shape.is-concealed{visibility:hidden;pointer-events:none;user-select:none}
+.cs-controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex:none;padding-top:4px}
+.cs-controls button{font-size:17px;line-height:1.3;padding:8px 20px;min-height:38px;border:1px solid #7a003c;color:#7a003c;background:#fff}
+.cs-controls [data-clause-next]{background:#7a003c;color:#fff;min-width:155px}
+.cs-controls button:disabled{opacity:.45;cursor:default}.cs-controls [data-clause-next]:hover:not(:disabled){background:#58002c;color:white}
+.cs-controls [data-clause-reset]:hover:not(:disabled){background:#faf1f5;color:#7a003c}
+@media(max-width:760px){
+ #lesson>.clause-step-page{height:auto!important;min-height:100%;overflow:visible;padding:18px 18px 24px!important;gap:18px}
+ .cs-heading{align-items:flex-start;gap:12px}.cs-heading h1{font-size:26px!important;line-height:1.3!important}.cs-heading img{width:100px;margin-top:4px}
+ .cs-viewport{flex:none;height:auto!important}.cs-canvas{position:static;width:100%;height:auto;transform:none!important;display:flex;flex-direction:column;gap:18px}
+ .cs-stack{display:block}.cs-stack:empty{display:none}.cs-stack-right{border-top:2px solid #fdbf57;padding-top:18px}
+ .cs-shape{position:static;width:auto!important;min-height:0!important;height:auto!important;left:auto!important;top:auto!important;margin:0 0 7px;padding:0}
+ .cs-shape p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5;text-align:left!important}
+ .cs-shape p span{font-size:20px!important}
+ .cs-shape p span[style*="vertical-align:sub"]{font-size:15px!important}
+ .cs-shape p span[style*="vertical-align:super"]{font-size:15px!important}
+ .cs-shape.is-concealed,.cs-decoration{display:none!important}
+ .cs-strike{position:relative;height:0!important;min-height:0!important;margin:0;z-index:2;pointer-events:none}
+ .cs-strike p{position:absolute;left:-1px;top:-4px;line-height:1}
+ .cs-strike p span{font-size:32px!important}
+ .cs-number{float:left;width:24px!important;margin:0 4px 0 0}.cs-number~.cs-right{padding-left:28px}.cs-number.cs-right{padding-left:0}
+ .cs-practice-title{margin-bottom:12px}.cs-controls{justify-content:space-between;position:sticky;bottom:0;background:#fff;padding:9px 0 0;margin-top:4px}.cs-controls button{font-size:16px;padding:10px 14px;min-width:0}
+}
+@media print{
+ .clause-step-page{height:auto!important;break-after:page;overflow:visible!important;padding:18px!important}
+ .cs-heading h1{font-size:24pt!important}.cs-heading img{width:140px}.cs-viewport{height:440px!important;flex:none}
+ .cs-canvas{position:relative;left:0;width:900px;height:395px;transform:scale(.8)!important;transform-origin:top left}
+ .cs-shape.is-concealed{visibility:visible!important}.cs-controls{display:none!important}
+}

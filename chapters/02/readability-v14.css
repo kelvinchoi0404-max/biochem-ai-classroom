@@ -1,0 +1,111 @@
+/* V14: authored reading rhythm. Source strings, image bytes and page boundaries stay in place. */
+@media screen and (min-width:761px){
+ body[data-chapter='02'] .c02-page.readability-page{--math-ink:#700032;--math-wash:#fbf4e7}
+ body[data-chapter='02'] .c02-page .c02-composition{column-gap:clamp(26px,3vw,52px)}
+ body[data-chapter='02'] .c02-page .type-heading{color:#700032;font-weight:700;text-wrap:balance}
+ body[data-chapter='02'] .c02-page .math-formula{font-weight:650}
+ body[data-chapter='02'] .c02-page .math-operator,body[data-chapter='02'] .c02-page .math-glyph{color:#62002d;font-weight:800}
+ /* Definitions and examples acquire distinct line measures without extra labels. */
+ body[data-chapter='02'] :is(.c02-page-8,.c02-page-10,.c02-page-13,.c02-page-23,.c02-page-24,.c02-page-33,.c02-page-48) .source-fragment{line-height:1.48}
+ body[data-chapter='02'] :is(.c02-page-8,.c02-page-13,.c02-page-23,.c02-page-33,.c02-page-48) .type-heading{margin-bottom:18px}
+ body[data-chapter='02'] :is(.c02-page-11,.c02-page-12) .c02-group .type-heading{margin-bottom:15px}
+ body[data-chapter='02'] .c02-page-14 .source-fragment{grid-template-columns:minmax(0,.28fr) minmax(0,.72fr);column-gap:28px;align-items:center}
+ body[data-chapter='02'] .c02-page-14 .type-heading{line-height:1.32}
+ body[data-chapter='02'] .c02-page-14 .paragraph:not(.type-heading)>.math-formula{margin-top:6px;color:#700032}
+ body[data-chapter='02'] .c02-page-16 [data-paragraph='2']>.math-formula,
+ body[data-chapter='02'] .c02-page-16 [data-paragraph='5']>.math-formula{line-height:1.38;padding:16px 18px;border-left-color:#7a003c}
+ body[data-chapter='02'] .c02-page-18 .g1 [data-paragraph='4']{line-height:1.4}
+ body[data-chapter='02'] .c02-page-20 .exercise-pair{grid-template-columns:minmax(0,.31fr) minmax(0,.69fr);column-gap:24px}
+ body[data-chapter='02'] .c02-page-20 .exercise-answer{border-left-color:#7a003c}
+ body[data-chapter='02'] .c02-page-21 .g0 .source-fragment{max-width:42em}
+ body[data-chapter='02'] .c02-page-21 .g1 .type-heading{font-weight:600;color:var(--ink)}
+ body[data-chapter='02'] .c02-page-21 .math-display{background:#fbf4e7;letter-spacing:.012em}
+ /* The four inference stages use a left gutter, leaving the text a continuous vertical start. */
+ body[data-chapter='02'] .c02-page-39 .c02-inference-stage{display:grid;grid-template-columns:34px minmax(0,1fr);column-gap:12px;align-content:start;padding-top:14px}
+ body[data-chapter='02'] .c02-page-39 .c02-stage-number{grid-column:1;grid-row:1/4;margin:0;line-height:1.2;font-size:27px;font-weight:700}
+ body[data-chapter='02'] .c02-page-39 .source-fragment{grid-column:2;line-height:1.4}
+ body[data-chapter='02'] .c02-page-39 .g3 .source-fragment{font-weight:550}
+ /* Slot names remain aligned; line height now carries the rhythm instead of large paragraph gaps. */
+ body[data-chapter='02'] .c02-page-45 .frame-model .source-fragment{line-height:1.36}
+ body[data-chapter='02'] .c02-page-45 .frame-model .paragraph{margin-bottom:3px}
+ body[data-chapter='02'] .c02-page-46 .frame-model .source-fragment{line-height:1.3}
+ body[data-chapter='02'] .c02-page-46 .frame-model .paragraph{margin-bottom:2px}
+ body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) .frame-model .type-heading{padding-bottom:8px;margin-bottom:12px;border-bottom:1px solid #decfd5}
+ body[data-chapter='02'] .c02-page-53 .g1 .math-display{width:100%;line-height:1.32}
+ body[data-chapter='02'] .c02-page-53 .g2 .source-fragment{line-height:1.48}
+ body[data-chapter='02'] .c02-page-55 .construction-copy .source-fragment+.source-fragment{border-color:#7a003c}
+ body[data-chapter='02'] .c02-page-55 .construction-copy .type-heading{margin-bottom:10px}
+}
+@media screen and (min-width:761px) and (max-width:1100px){
+ body[data-chapter='02'] .c02-page-14 .source-fragment{column-gap:18px;grid-template-columns:minmax(0,.29fr) minmax(0,.71fr)}
+ body[data-chapter='02'] .c02-page-39 .c02-inference-stage{grid-template-columns:28px minmax(0,1fr);column-gap:8px}
+ body[data-chapter='02'] .c02-page-39 .c02-stage-number{font-size:23px}
+ body[data-chapter='02'] .c02-page-39 .source-fragment{line-height:1.34}
+ body[data-chapter='02'] .c02-page-46 .frame-model .source-fragment{line-height:1.29}
+}
+
+/* V22: frame > slot > facet. Indentation follows each column's actual hierarchy. */
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) .frame-model{
+ --frame-slot-indent:clamp(24px,2.25vw,40px);
+ --frame-facet-indent:clamp(76px,6.75vw,116px);
+ --frame-guide:#b792a3;
+}
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-level]{position:relative;padding-left:0}
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-level='slot']{padding-left:var(--frame-slot-indent)}
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-level='facet']{padding-left:var(--frame-facet-indent)}
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-level='facet']::before,
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-level='facet']::after{
+ content:"";position:absolute;left:calc(var(--frame-slot-indent) + .35em);pointer-events:none;
+}
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-level='facet']::before{
+ top:-.15em;bottom:-.2em;border-left:2px solid var(--frame-guide);
+}
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-level='facet']::after{
+ top:.68em;width:calc(var(--frame-facet-indent) - var(--frame-slot-indent) - .75em);border-top:2px solid var(--frame-guide);
+}
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-facet-end='true']::before{bottom:calc(100% - .68em)}
+body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) [data-frame-level='constraint']{
+ border-top:1px solid #decfd5;padding-top:5px;margin-top:4px;
+}
+@media screen and (max-width:760px){
+ body[data-chapter='02'] :is(.c02-page-45,.c02-page-46) .frame-model{--frame-slot-indent:20px;--frame-facet-indent:60px}
+}
+
+/* V23: show the complete inference diagram with the original rule bank below it. */
+body[data-chapter='02'] .c02-page-40 .c02-composition{
+ grid-template-rows:minmax(0,1fr) auto;align-content:stretch;align-items:stretch;gap:12px;
+}
+body[data-chapter='02'] .c02-page-40 .native-diagram{min-height:0}
+body[data-chapter='02'] .c02-page-40 .c02-rule-reference{
+ background:#faf8f5;border-top:2px solid var(--gold);padding:8px 12px 10px;min-width:0;
+}
+body[data-chapter='02'] .c02-rule-reference h2{
+ margin:0 0 7px;color:var(--wine);font-size:clamp(16px,1.3vw,23px);line-height:1.2;
+}
+body[data-chapter='02'] .c02-rule-reference h2 span{font-size:.78em;font-weight:400;color:var(--muted);margin-left:.5em}
+body[data-chapter='02'] .c02-reference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+body[data-chapter='02'] .c02-reference-column{min-width:0}
+body[data-chapter='02'] .c02-page-40 .c02-rule-reference .source-fragment{
+ font-size:clamp(10.5px,min(.88vw,1.57dvh),16px);line-height:1.2;
+}
+body[data-chapter='02'] .c02-page-40 .c02-rule-reference .paragraph{
+ margin:0 0 3px;padding-left:6px;border-left:2px solid transparent;text-wrap:pretty;
+}
+body[data-chapter='02'] .c02-page-40 .c02-rule-reference :is([data-paragraph='2'],[data-paragraph='7'],[data-paragraph='11']){
+ border-left-color:var(--wine);background:#f3e6ec;
+}
+@media screen and (max-width:760px){
+ body[data-chapter='02'] .c02-page-40 .native-diagram{height:190px!important}
+ body[data-chapter='02'] .c02-page-40 .c02-reference-grid{grid-template-columns:1fr;gap:0}
+ body[data-chapter='02'] .c02-page-40 .c02-rule-reference .source-fragment{font-size:15px!important;line-height:1.5}
+ body[data-chapter='02'] .c02-page-40 .c02-rule-reference .paragraph{margin-bottom:8px}
+}
+
+body[data-chapter='02'] .c02-page-40 .c02-rule-reference :is(.math-operator,.math-formula,.math-term,.key-term){font-size:1em;line-height:inherit}
+
+/* V24: align defaults under their slots; frame-valued slots stay at the same level. */
+body[data-chapter='02'] .c02-page-46 [data-frame-level='facet']{white-space:normal}
+body[data-chapter='02'] .c02-page-46 .frame-reference-value{
+ display:inline-block;padding:0 .3em;margin:0 .08em;border:1px solid #dfc8d2;border-radius:4px;
+ background:#faf2f6;color:var(--wine);font-size:.93em;line-height:1.12;white-space:nowrap;vertical-align:baseline;
+}

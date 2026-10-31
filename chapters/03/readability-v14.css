@@ -1,0 +1,74 @@
+/* V14: source paragraphs form conceptual groups; formulas retain their exact text and source images. */
+@media screen and (min-width:761px){
+ body[data-chapter='03'] .c03-page.readability-page{--math-ink:#700032;--math-wash:#fbf4e7}
+ body[data-chapter='03'] .c03-page .type-heading{color:#700032;font-weight:700;text-wrap:balance}
+ body[data-chapter='03'] .c03-page .math-glyph,body[data-chapter='03'] .c03-page .math-operator{font-weight:800;color:#62002d}
+ body[data-chapter='03'] .c03-page .c03-native-math{background:#fff;vertical-align:middle}
+ /* Short classifications become a scannable two-column field, with original labels only. */
+ body[data-chapter='03'] :is(.c03-page-6,.c03-page-13,.c03-page-24,.c03-page-52,.c03-page-70) .source-fragment{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 38px}
+ body[data-chapter='03'] :is(.c03-page-6,.c03-page-13,.c03-page-24,.c03-page-52,.c03-page-70) .type-heading{grid-column:1/-1;margin:0;padding:0}
+ body[data-chapter='03'] :is(.c03-page-6,.c03-page-13,.c03-page-24,.c03-page-52,.c03-page-70) .type-body{margin:0;padding:17px 18px;border-left:3px solid #7a003c;background:#fbf6ed;line-height:1.45}
+ body[data-chapter='03'] :is(.c03-page-7,.c03-page-8,.c03-page-10,.c03-page-11,.c03-page-14,.c03-page-16,.c03-page-17,.c03-page-19,.c03-page-20,.c03-page-51,.c03-page-58) .source-fragment{line-height:1.48}
+ body[data-chapter='03'] :is(.c03-page-7,.c03-page-8,.c03-page-10,.c03-page-11,.c03-page-14,.c03-page-16,.c03-page-17,.c03-page-19,.c03-page-20,.c03-page-51,.c03-page-58) .type-heading{margin-bottom:16px}
+ /* Keep each AND / OR rule beside its own CF result; no source offsets or strings are changed. */
+ body[data-chapter='03'] .c03-page-62 .c03-composition{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto auto;gap:18px 34px;align-content:center;align-items:start}
+ body[data-chapter='03'] .c03-page-62 .c03-group{display:contents}
+ body[data-chapter='03'] .c03-page-62 .source-fragment{display:grid;grid-column:1/-1;grid-row:1/5;grid-template-columns:subgrid;grid-template-rows:subgrid}
+ body[data-chapter='03'] .c03-page-62 [data-paragraph='0']{grid-column:1/-1;grid-row:1;margin-bottom:8px}
+ body[data-chapter='03'] .c03-page-62 [data-paragraph='2']{grid-column:1;grid-row:2}
+ body[data-chapter='03'] .c03-page-62 [data-paragraph='4']{grid-column:1;grid-row:3}
+ body[data-chapter='03'] .c03-page-62 [data-paragraph='5']{grid-column:1;grid-row:4}
+ body[data-chapter='03'] .c03-page-62 [data-paragraph='7']{grid-column:2;grid-row:2}
+ body[data-chapter='03'] .c03-page-62 [data-paragraph='9']{grid-column:2;grid-row:3}
+ body[data-chapter='03'] .c03-page-62 [data-paragraph='10']{grid-column:2;grid-row:4}
+ body[data-chapter='03'] .c03-page-62 .paragraph{margin:0}
+ body[data-chapter='03'] .c03-page-62 .math-display{width:100%;font-size:1.15em;line-height:1.4;padding:13px 16px}
+ body[data-chapter='03'] .c03-page-62 [data-paragraph='2'],body[data-chapter='03'] .c03-page-62 [data-paragraph='7']{padding-bottom:12px;border-bottom:2px solid #dcb663}
+ /* A single central CF rule receives its own column; assumptions stay next to the explanation. */
+ body[data-chapter='03'] .c03-page-63 .source-fragment{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:16px 36px}
+ body[data-chapter='03'] .c03-page-63 [data-paragraph='0']{grid-column:1/-1}
+ body[data-chapter='03'] .c03-page-63 [data-paragraph='2']{grid-column:1;grid-row:2}
+ body[data-chapter='03'] .c03-page-63 [data-paragraph='3']{grid-column:1;grid-row:3/6;line-height:1.5}
+ body[data-chapter='03'] .c03-page-63 [data-paragraph='5']{grid-column:2;grid-row:2}
+ body[data-chapter='03'] .c03-page-63 [data-paragraph='6']{grid-column:2;grid-row:3}
+ body[data-chapter='03'] .c03-page-63 [data-paragraph='8']{grid-column:2;grid-row:4}
+ body[data-chapter='03'] .c03-page-63 [data-paragraph='9']{grid-column:2;grid-row:5}
+ body[data-chapter='03'] .c03-page-63 .math-display{font-size:1.16em;line-height:1.38;width:100%}
+ /* Step-by-step algebra: less padded blocks, clearer starts and concluding values. */
+ body[data-chapter='03'] :is(.c03-page-66,.c03-page-67) .math-display{padding:8px 12px;line-height:1.34}
+ body[data-chapter='03'] .c03-page-66 :is([data-paragraph='5'],[data-paragraph='10']){margin-top:14px;padding-top:10px;border-top:2px solid #dcb663;font-weight:700}
+ body[data-chapter='03'] .c03-page-67 [data-paragraph='8']{margin-top:16px;font-weight:700}
+ body[data-chapter='03'] :is(.c03-page-93,.c03-page-94) .g1 [data-paragraph='7']{padding-top:10px;border-top:2px solid #dcb663}
+ body[data-chapter='03'] .c03-page-93 .g0 :is([data-paragraph='7'],[data-paragraph='9'],[data-paragraph='11']){font-weight:600;color:#30343b;margin-bottom:5px}
+ body[data-chapter='03'] .c03-page-94 .g0 :is([data-paragraph='6'],[data-paragraph='10']){margin-top:12px;margin-bottom:6px}
+ /* Page 99: complete rule clauses read in sequence, followed by representation and inference. */
+ body[data-chapter='03'] .c03-page-99 .c03-composition{grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:32px;align-items:center;align-content:stretch}
+ body[data-chapter='03'] .c03-page-99 .c03-picture-copy .source-fragment{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;line-height:1.4}
+ body[data-chapter='03'] .c03-page-99 .paragraph{margin:0}
+ body[data-chapter='03'] .c03-page-99 [data-paragraph='0']{grid-column:1/-1;grid-row:1;margin-bottom:4px}
+ body[data-chapter='03'] .c03-page-99 [data-paragraph='2']{grid-column:1;grid-row:2;font-size:.9em;color:#50515a}
+ body[data-chapter='03'] .c03-page-99 [data-paragraph='3']{grid-column:1;grid-row:3;font-size:1.1em;font-weight:700;color:#700032;background:#fbf2df;border-left:4px solid #7a003c;padding:8px 16px;line-height:1.4}
+ body[data-chapter='03'] .c03-page-99 [data-paragraph='4']{grid-column:1;grid-row:4;font-size:.9em;font-weight:650;color:#72521b}
+ body[data-chapter='03'] .c03-page-99 [data-paragraph='5']{grid-column:1;grid-row:5;padding:8px 16px;background:#f4f7f8;border-left:4px solid #a1b2ba;line-height:1.4;font-weight:550}
+ body[data-chapter='03'] .c03-page-99 [data-paragraph='7']{grid-column:1;grid-row:6;padding-top:10px;margin-top:2px;border-top:1px solid #d8c9cf;font-weight:550}
+ body[data-chapter='03'] .c03-page-99 [data-paragraph='9']{grid-column:1;grid-row:7;line-height:1.42}
+ body[data-chapter='03'] .c03-page-99 .c03-visuals{height:100%;max-height:420px;align-self:center}
+ body[data-chapter='03'] .c03-page-99 .c03-visuals .image-button img{object-fit:contain}
+}
+@media screen and (min-width:761px) and (max-width:1100px){
+ body[data-chapter='03'] :is(.c03-page-6,.c03-page-13,.c03-page-24,.c03-page-52,.c03-page-70) .source-fragment{gap:18px 24px}
+ body[data-chapter='03'] .c03-page-62 .c03-composition{column-gap:26px}
+ body[data-chapter='03'] .c03-page-62 .math-display{font-size:1.1em;padding:12px;line-height:1.4}
+ body[data-chapter='03'] .c03-page-63 .source-fragment{column-gap:24px}
+ body[data-chapter='03'] .c03-page-99 .c03-composition{grid-template-columns:minmax(0,2.25fr) minmax(0,1fr);gap:24px}
+ body[data-chapter='03'] .c03-page-99 .c03-picture-copy .source-fragment{gap:8px}
+ body[data-chapter='03'] .c03-page-99 [data-paragraph='3'],body[data-chapter='03'] .c03-page-99 [data-paragraph='5']{padding:8px 12px}
+}
+@media screen and (min-width:761px){
+ /* Raster sums retain every source symbol; increase the mathematical body, not surrounding prose. */
+ body[data-chapter='03'] :is(.c03-page-72,.c03-page-74,.c03-page-105) .c03-native-math img{height:2.8em}
+ body[data-chapter='03'] .c03-page-76 .c03-native-math img{height:3.1em}
+ body[data-chapter='03'] .c03-page-76 .c03-native-math img[data-original-math='c03-p76-math04']{height:1.1em}
+ body[data-chapter='03'] .c03-page-77 .c03-native-math img{height:3.05em}
+ body[data-chapter='03'] :is(.c03-page-81,.c03-page-84,.c03-page-90,.c03-page-92) .c03-native-math img{height:2.65em}
+}

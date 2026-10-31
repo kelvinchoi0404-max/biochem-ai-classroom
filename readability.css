@@ -1,0 +1,65 @@
+/* V14 shared reading hierarchy. Geometry remains authored for each slide. */
+.readability-page:not(.hero):not(.c02-hero):not(.c03-hero):not(.c04-hero):not(.c05-hero):not(.c06-hero)>.page-heading{padding-bottom:12px;border-bottom:1px solid #d8d5d6;margin-bottom:11px}
+.readability-page .page-heading h1{font-weight:700}
+.readability-page .page-heading .heading-number{background:none;box-shadow:none;color:#7a003c;font-weight:500}
+.readability-page .type-heading{font-weight:720}
+.readability-page .type-subheading{font-weight:700;color:#4a3540}
+.readability-page .key-term,.readability-page .term-label{font-weight:700}
+.readability-page .term-label{background:none;text-decoration:underline;text-decoration-color:#efcf89;text-decoration-thickness:.12em;text-underline-offset:.2em}
+.readability-page .math-formula,.readability-page .math-term,.readability-page .math-operator{font-variant-numeric:lining-nums tabular-nums;letter-spacing:0}
+.readability-page .math-operator{color:#780034;font-weight:750}
+.readability-page .math-glyph{font-weight:750}
+.readability-page .formula-only-line{color:#680030}
+.readability-page .concept-frame{outline:0;box-shadow:none;border-radius:0}
+@media(min-width:1600px){.readability-page:not(.hero):not(.c02-hero):not(.c03-hero):not(.c04-hero):not(.c05-hero):not(.c06-hero)>.page-heading{padding-bottom:16px;margin-bottom:17px}}
+/* Chapter01: definitions, comparisons and evidence each receive a reading rhythm. */
+body[data-chapter='01'] .readability-page .source-fragment{letter-spacing:-.01em}
+body[data-chapter='01'] .readability-page .type-heading{letter-spacing:-.02em}
+body[data-chapter='01'] .readability-page.layout-objectives .paragraph{padding:14px 18px 16px;background:#faf7f2;border-top:3px solid #bb8840;line-height:1.46}
+body[data-chapter='01'] .readability-page.layout-agenda .agenda-item{padding-left:12px;font-weight:500}
+body[data-chapter='01'] .readability-page.layout-agenda .agenda-item:nth-child(even){background:#fbf9f5}
+body[data-chapter='01'] .readability-page.page-5 .type-key{background:#faf6f0;padding:20px 22px;border-top:0;border-left:4px solid #bb8840}
+body[data-chapter='01'] .readability-page.layout-intelligence .group-theories .type-list{padding:12px 12px 8px;border-top:2px solid #b98b45;background:#faf7f2;line-height:1.38}
+body[data-chapter='01'] .readability-page.layout-thinking .content-group:not(.group-capabilities){padding:14px 12px 10px;border-top:2px solid #b98b45;background:#faf8f4}
+body[data-chapter='01'] .readability-page.page-8 .type-heading{font-size:1.1em;margin-bottom:16px}
+body[data-chapter='01'] .readability-page.page-8 [data-paragraph='4']{border-top:1px solid #d8d0d3;padding-top:16px;margin-top:20px}
+body[data-chapter='01'] .readability-page.layout-timeline .paragraph{padding:18px 18px 16px;background:#faf8f3;border-top:2px solid #b98b45;line-height:1.45}
+body[data-chapter='01'] .readability-page.layout-abc .group-history .type-key{padding:14px 12px;background:#faf6f0;border-top:0;border-left:3px solid #b98b45}
+body[data-chapter='01'] .readability-page.layout-conference .group-figures{gap:24px}
+body[data-chapter='01'] .readability-page.layout-history .content-group{padding:20px 18px 16px;background:#fbf8f4}
+body[data-chapter='01'] .readability-page.page-16 .type-key{padding:20px 24px;border-left:4px solid #b98b45;background:#faf6ef}
+body[data-chapter='01'] .readability-page.layout-schools .content-group{padding:12px 14px;border-top:3px solid #ab7440;background:#faf8f4}
+body[data-chapter='01'] .readability-page.layout-schools .content-group+ .content-group{border-top-color:#8a3b60;background:#faf5f7}
+body[data-chapter='01'] .readability-page.layout-schools .type-heading{border-top:0;padding-top:0;padding-bottom:10px;border-bottom:1px solid #ddd2d6}
+body[data-chapter='01'] .readability-page.layout-schools .source-fragment{line-height:1.36}
+body[data-chapter='01'] .readability-page.layout-behaviour .source-fragment{line-height:1.5}
+body[data-chapter='01'] .readability-page.layout-research .group-representation{padding:16px 18px;border-top:3px solid #b98b45;background:#faf8f4}
+body[data-chapter='01'] .readability-page.layout-research .group-thinking{border-top:2px solid #8a3b60;padding-top:12px}
+body[data-chapter='01'] .readability-page.page-23 .question-choice{padding:22px 18px;background:#faf7f2}
+body[data-chapter='01'] .readability-page.layout-fields .type-list{line-height:1.4;padding-left:8px}
+body[data-chapter='01'] .readability-page.layout-fields .type-list:nth-child(even){background:#faf8f3}
+body[data-chapter='01'] .readability-page.layout-laws .type-list{padding:18px 20px;background:#fbf8f1;border-top:1px solid #d7c8ad;margin-bottom:12px}
+body[data-chapter='01'] .readability-page.layout-ethics .group-scope,body[data-chapter='01'] .readability-page.layout-ethics .group-disciplines{padding:18px;background:#faf7f2}
+body[data-chapter='01'] .readability-page.layout-argument .group-context{padding:18px;background:#faf7f2}
+body[data-chapter='01'] .readability-page.layout-governance .group-definition{padding:18px 20px;background:#faf7f2}
+body[data-chapter='01'] .readability-page.layout-governance .type-list{padding:10px 10px 10px 14px;line-height:1.42}
+body[data-chapter='01'] .readability-page.video-lesson .film-text .type-heading{padding-bottom:9px;border-bottom:1px solid #ded2d7}
+body[data-chapter='01'] .readability-page.video-page-29 .game-body{line-height:1.45}
+@media(min-width:761px) and (max-width:1100px){
+body[data-chapter='01'] .readability-page.layout-schools .content-group{padding:10px}
+body[data-chapter='01'] .readability-page.layout-schools .source-fragment{line-height:1.31}
+body[data-chapter='01'] .readability-page.layout-thinking .content-group:not(.group-capabilities){padding-left:8px;padding-right:8px}
+body[data-chapter='01'] .readability-page.layout-research .group-representation{padding:12px}
+}
+/* Six objectives use equal rows with space reserved for the page heading. */
+body[data-chapter='01'] .readability-page.layout-objectives .source-fragment{gap:18px 34px}
+body[data-chapter='01'] .readability-page.layout-objectives .paragraph{padding:10px 16px 8px;line-height:1.4}
+body[data-chapter='01'] .readability-page.layout-objectives .paragraph:before{margin-bottom:8px}
+/* Course and tool navigation uses the same title/detail contrast. */
+#course-home .home-chapter-title{font-weight:650}
+#course-home .home-chapter-number{font-variant-numeric:tabular-nums;color:#7a003c}
+#course-home .home-chapter-meta{color:#66616a}
+.reading-record h3,.film-record h3{font-weight:650;line-height:1.35}
+.toc button[aria-current='page']{background:#faf4f7}
+/* Section-cover numbers stay legible over photography. */
+.readability-page:is(.hero,.c02-hero,.c03-hero,.c04-hero,.c05-hero,.c06-hero) .heading-number{background:none;box-shadow:none;color:#ffd184;font-weight:500}

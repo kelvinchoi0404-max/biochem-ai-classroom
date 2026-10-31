@@ -1,0 +1,155 @@
+/* V14 · Chapter 05. Source text, original gene colors and native formulas are unchanged. */
+@media (min-width:761px) {
+  .readability-page.c05-page {
+    --c05-body:clamp(25px,min(2.35vw,4.18dvh),39px);
+    --c05-small:clamp(23px,min(2.03vw,3.62dvh),34px);
+    --math-ink:#700032;--math-wash:#faf3e8;
+  }
+  .readability-page.c05-page .source-fragment {line-height:1.43;letter-spacing:-.012em}
+  .readability-page.c05-page .paragraph {margin-bottom:15px;text-wrap:pretty}
+  .readability-page.c05-page .type-heading {font-size:1.08em;line-height:1.3;margin-bottom:16px;letter-spacing:-.02em}
+  .readability-page.c05-page .type-subheading {line-height:1.32;margin-bottom:12px}
+  .readability-page.c05-page .c05-composition {gap:22px 30px}
+  .readability-page.c05-page .c05-group {border-top:2px solid #c09558;padding-top:16px}
+  .readability-page.c05-page .concept-frame {background:none}
+  .readability-page.c05-page .concept-frame>.source-fragment>.type-heading:first-child {border-bottom:0;padding-bottom:0}
+  .readability-page.c05-page.c05-has-lead .g0 {border:0;padding-top:0}
+  .readability-page.c05-density-compact .source-fragment {font-size:var(--c05-small);line-height:1.36}
+  .readability-page.c05-page .math-formula {font-weight:700;line-height:1.28}
+  .readability-page.c05-page .math-display {padding:13px 18px;border-left:4px solid #bc8840;background:#faf3e8;font-size:1.28em;line-height:1.3}
+  .readability-page.c05-page .math-term {font-weight:720}
+
+  /* Scannable concepts and step sequences without introducing source words. */
+  .readability-page.c05-layout-objectives .source-fragment {gap:18px 32px}
+  .readability-page.c05-layout-objectives .paragraph {padding:15px 14px 11px;background:#faf7f1;border-top:2px solid #bb8840;line-height:1.4}
+  .readability-page.c05-page-5 .c05-group {padding:16px 14px;background:#faf8f3}
+  .readability-page.c05-page-5 .source-fragment {font-size:var(--c05-small);line-height:1.41}
+  .readability-page.c05-page-6 .g1,
+  .readability-page.c05-page-6 .g2 {padding:16px 14px;background:#faf8f3}
+  .readability-page.c05-page-6 .g3 {border-top:1px solid #d7c6aa;padding-top:14px}
+  .readability-page.c05-page-7 .c05-copy .paragraph {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #e9e1e4}
+  .readability-page.c05-page-7 .c05-copy .source-fragment {line-height:1.35}
+  .readability-page.c05-page-8 .c05-group {padding:18px 14px 12px;background:#faf8f3}
+  .readability-page.c05-page-8 .g1 {background:#faf5f7;border-color:#92516d}
+  .readability-page.c05-page-10 .c05-composition {grid-template-columns:minmax(0,.9fr) minmax(0,1fr) minmax(0,1.12fr);column-gap:26px;align-content:center}
+  .readability-page.c05-page-10 .c05-group {padding:12px 0 0;border-top:3px solid #bd945a;background:linear-gradient(#faf7f1,transparent 150px)}
+  .readability-page.c05-page-10 .source-fragment {font-size:clamp(22px,min(1.98vw,3.5dvh),32px);line-height:1.32}
+  .readability-page.c05-page-10 .paragraph {margin-bottom:10px}
+  .readability-page.c05-layout-elements .c05-element-list .paragraph {padding-top:16px;padding-bottom:16px;background:#fcfaf6}
+  .readability-page.c05-layout-elements .c05-element-list .paragraph:nth-child(even) {background:#faf5f7}
+  .readability-page.c05-page-17 .c05-group,
+  .readability-page.c05-page-21 .c05-group {padding:18px 14px 12px;background:#faf8f3}
+  .readability-page.c05-page-17 .g1,
+  .readability-page.c05-page-21 .g1 {background:#faf5f7;border-color:#92516d}
+  .readability-page.c05-page-18 .g1,
+  .readability-page.c05-page-18 .g2 {padding:14px 14px 10px;background:#faf8f3}
+  .readability-page.c05-page-18 .g2 {background:#faf5f7;border-color:#92516d}
+  .readability-page.c05-page-18 .source-fragment {font-size:var(--c05-small);line-height:1.35}
+  .readability-page.c05-page-18 .paragraph {margin-bottom:9px}
+  .readability-page.c05-page-18 [data-paragraph='10'] {padding:10px 12px;background:#f4e8ed;border-left:3px solid #a14b70;font-size:1.12em;font-variant-numeric:tabular-nums}
+  .readability-page.c05-page-22 .c05-group {padding:14px 10px 10px;background:#faf8f3}
+  .readability-page.c05-page-22 .g1 {background:#faf5f7;border-color:#92516d}
+  .readability-page.c05-page-22 .source-fragment {font-size:clamp(22px,min(1.97vw,3.5dvh),32px);line-height:1.34}
+  .readability-page.c05-page-22 .paragraph {margin-bottom:11px}
+
+  /* Native tables retain their exact cells and original highlighted answer colors. */
+  .readability-page.c05-page .c05-table th {background:#f4e8ee;border-top:2px solid #8b2854;color:#6f123c}
+  .readability-page.c05-page .c05-table td {border-bottom-color:#ddd4d8}
+  .readability-page.c05-page .c05-table tr:nth-child(odd)>td {background:#fbf9f5}
+  .readability-page.c05-page .c05-table .source-fragment {line-height:1.23}
+  .readability-page.c05-page .c05-table .paragraph {margin:0;padding:0;line-height:inherit;font-size:inherit}
+  .readability-page.c05-layout-comparison-table .c05-table th:first-child {width:30%}
+  .readability-page.c05-layout-comparison-table .c05-table th,
+  .readability-page.c05-layout-comparison-table .c05-table td {padding:6px 14px}
+  .readability-page.c05-layout-comparison-table .c05-table .source-fragment {font-size:clamp(22px,min(1.86vw,3.35dvh),32px)}
+  .readability-page.c05-layout-gray-tables .c05-composition {gap:14px 34px}
+  .readability-page.c05-layout-gray-tables .c05-table {margin-top:12px}
+  .readability-page.c05-layout-gray-tables .c05-table td {padding:7px 10px}
+  .readability-page.c05-layout-gray-tables .c05-table td .source-fragment {font-size:clamp(26px,min(2.35vw,4.2dvh),40px);line-height:1.18;letter-spacing:.055em;font-weight:550}
+  .readability-page.c05-layout-gray-tables .c05-table th .source-fragment {font-size:var(--c05-small);line-height:1.2;font-weight:650}
+
+  /* Formula layouts leave the original raster equations room to be read. */
+  .readability-page.c05-page-13 .c05-copy .paragraph {margin-bottom:8px}
+  .readability-page.c05-page-13 .math-display {font-size:1.28em;padding:10px 16px}
+  .readability-page.c05-layout-fitness-mapping .c05-composition {gap:12px 32px;grid-template-columns:.88fr 1.2fr}
+  .readability-page.c05-layout-fitness-mapping .source-fragment {font-size:clamp(22px,min(1.98vw,3.52dvh),32px);line-height:1.3}
+  .readability-page.c05-layout-fitness-mapping .paragraph {margin-bottom:0}
+  .readability-page.c05-layout-fitness-mapping .c05-mapping-group {border-top:3px solid #bf9251;padding:10px 12px 0;gap:7px;background:#fdfbf8}
+  .readability-page.c05-layout-fitness-mapping .c05-mapping-group:last-child {border-color:#9b5a78;background:#fcf8fa}
+  .readability-page.c05-page-24 .g1 {padding:14px 16px;background:#faf8f3}
+  .readability-page.c05-page-24 .g2 {padding:16px 18px;background:#faf3e8;border-left:4px solid #bc8840;border-top:0}
+  .readability-page.c05-layout-linear-scaling .c05-composition {gap:16px 34px}
+  .readability-page.c05-layout-linear-scaling .c05-scaling-formula {padding:12px 16px;border-top:2px solid #c09558;background:#fcfaf6}
+  .readability-page.c05-layout-linear-scaling .c05-scaling-formula:last-child {border-color:#92516d;background:#fcf8fa}
+  .readability-page.c05-page-26 .c05-group {padding:24px 20px;background:#faf7f1;border-top:3px solid #ba8744}
+  .readability-page.c05-page-26 .g1 {background:#faf4f7;border-color:#92516d}
+  .readability-page.c05-page-26 .math-formula {display:block;width:fit-content;margin-top:16px;font-size:1.8em;line-height:1.25;color:#6f0032}
+  .readability-page.c05-page-26 .math-formula .math-formula {display:inline;margin:0;font-size:inherit}
+  .readability-page.c05-layout-probability .c05-copy {padding:18px 16px;background:#faf8f3;border-top:3px solid #bf9251}
+  .readability-page.c05-layout-probability .c05-copy .paragraph {margin-bottom:16px}
+  .readability-page.c05-layout-ranking .c05-composition {gap:12px 30px}
+  .readability-page.c05-layout-ranking .source-fragment {font-size:clamp(22px,min(1.98vw,3.52dvh),32px);line-height:1.32}
+  .readability-page.c05-layout-ranking .c05-ranking-column {padding:12px 12px 0;background:#fcfaf6;border-top:3px solid #bf9251;gap:10px}
+  .readability-page.c05-layout-ranking .c05-ranking-column:nth-of-type(3) {background:#fcf8fa;border-color:#92516d}
+  .readability-page.c05-layout-ranking .c05-ranking-rule {padding:10px 14px;background:#faf3e8;border-left:3px solid #bc8840}
+  .readability-page.c05-layout-ranking .c05-ranking-rule .paragraph {margin-bottom:5px}
+  .readability-page.c05-layout-roulette .c05-composition {gap:14px 28px;grid-template-rows:max-content max-content minmax(0,1fr)}
+  .readability-page.c05-layout-roulette .c05-roulette-intro .paragraph {margin-bottom:6px;line-height:1.3}
+  .readability-page.c05-layout-roulette .c05-table th,
+  .readability-page.c05-layout-roulette .c05-table td {padding:8px 4px}
+  .readability-page.c05-layout-roulette .c05-table .source-fragment {font-size:clamp(20px,min(1.84vw,3.3dvh),31px);line-height:1.2}
+  .readability-page.c05-layout-roulette .c05-roulette-example .paragraph {padding:8px 14px;margin-bottom:9px;background:#faf8f3;border-top:2px solid #c09558}
+  .readability-page.c05-page-31 .c05-group {padding:14px 11px 8px;background:#faf8f3}
+  .readability-page.c05-page-31 .g1 {background:#faf5f7;border-color:#92516d}
+  .readability-page.c05-page-31 .source-fragment {font-size:clamp(22px,min(1.98vw,3.52dvh),32px);line-height:1.37}
+  .readability-page.c05-page-31 .paragraph {margin-bottom:10px}
+
+  /* Parents, offspring and repaired chromosomes are distinct, aligned reading rows. */
+  .readability-page.c05-layout-chromosomes .c05-composition {gap:16px 30px}
+  .readability-page.c05-page-32 .c05-composition,
+  .readability-page.c05-page-34 .c05-composition {grid-template-rows:repeat(3,max-content)}
+  .readability-page.c05-layout-chromosomes .c05-group {padding-top:12px}
+  .readability-page.c05-layout-chromosomes .g0 {padding:12px 14px;background:#faf8f3}
+  .readability-page.c05-layout-chromosomes .source-fragment {font-size:var(--c05-small);line-height:1.34}
+  .readability-page.c05-layout-chromosomes .paragraph {margin-bottom:10px}
+  .readability-page.c05-layout-chromosomes .paragraph:has(.c05-gene-sequence) {padding:6px 0;background:#faf7f1;margin-bottom:7px}
+  .readability-page.c05-layout-chromosomes .g2 .paragraph:has(.c05-gene-sequence) {background:#faf3f6}
+  .readability-page.c05-layout-chromosomes .c05-gene-label {margin-bottom:5px;font-size:.88em;line-height:1.25;color:#4e3c45;font-weight:550}
+  .readability-page.c05-layout-chromosomes .c05-gene-sequence {font-size:clamp(24px,2.05vw,34px);line-height:1.35;letter-spacing:-.035em;font-weight:650}
+  .readability-page.c05-page .c05-gene-sequence .math-formula,
+  .readability-page.c05-page .c05-gene-sequence .math-display {display:inline;font:inherit;letter-spacing:inherit;color:inherit;background:none;padding:0;border:0;margin:0;line-height:inherit}
+  .readability-page.c05-page-32 .g3 .source-fragment {gap:30px}
+  .readability-page.c05-page-34 .g2 .type-subheading {font-size:.9em;line-height:1.3}
+  .readability-page.c05-page-35 .c05-group {padding:16px 14px;background:#faf8f3}
+  .readability-page.c05-page-35 .g1 {background:#faf5f7;border-color:#92516d}
+  .readability-page.c05-layout-steps .c05-composition {gap:26px;grid-template-columns:1.32fr 1fr}
+  .readability-page.c05-layout-steps .c05-step-copy .source-fragment {font-size:clamp(22px,min(1.97vw,3.5dvh),32px);line-height:1.34}
+  .readability-page.c05-layout-steps .c05-step-copy .paragraph {padding:5px 8px 5px 40px;background:#fcfaf6;border-bottom:1px solid #e7dedf;margin-bottom:7px}
+  .readability-page.c05-layout-steps .c05-step-copy .paragraph:before {top:5px}
+  .readability-page.resource-video-05-12 .resource-source .type-heading {padding-bottom:9px;border-bottom:1px solid #d8bd96;margin-bottom:12px;font-size:1.1em}
+  .readability-page.resource-video-05-12 .resource-source .c05-table th {background:#f4e8ee;color:#6f123c}
+  .readability-page.resource-video-05-12 .resource-source .c05-table td {padding-top:11px;padding-bottom:11px}
+}
+@media (min-width:761px) and (max-width:1100px) {
+  .readability-page.c05-page {--c05-body:25px;--c05-small:23px}
+  .readability-page.c05-page .c05-composition {gap:18px 24px}
+  .readability-page.c05-page .paragraph {margin-bottom:12px}
+  .readability-page.c05-page-10 .c05-composition {column-gap:22px}
+  .readability-page.c05-page-10 .c05-group {padding:12px 0 0}
+  .readability-page.c05-page-10 .source-fragment {font-size:22px;line-height:1.31}
+  .readability-page.c05-page-17 .c05-group,
+  .readability-page.c05-page-22 .c05-group,
+  .readability-page.c05-page-31 .c05-group {padding-left:9px;padding-right:9px}
+  .readability-page.c05-page-18 [data-paragraph='10'] {padding:8px;font-size:1.04em}
+  .readability-page.c05-layout-fitness-mapping .c05-mapping-group {padding:8px 8px 0}
+  .readability-page.c05-layout-fitness-mapping .source-fragment {font-size:22px}
+  .readability-page.c05-layout-ranking .source-fragment {font-size:22px;line-height:1.31}
+  .readability-page.c05-layout-ranking .c05-ranking-column {padding:10px 8px 0}
+  .readability-page.c05-layout-roulette .c05-composition {gap:12px 24px}
+  .readability-page.c05-layout-roulette .c05-table .source-fragment {font-size:20px}
+  .readability-page.c05-layout-chromosomes .c05-composition {gap:14px 24px}
+  .readability-page.c05-layout-chromosomes .paragraph:has(.c05-gene-sequence) {padding:7px 0}
+  .readability-page.c05-layout-chromosomes .c05-gene-sequence {font-size:24px;letter-spacing:-.035em}
+  .readability-page.c05-layout-steps .c05-step-copy .paragraph {padding:7px 6px 7px 32px;margin-bottom:7px}
+  .readability-page.c05-layout-steps .c05-step-copy .paragraph:before {top:7px}
+}

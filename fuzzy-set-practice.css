@@ -1,0 +1,34 @@
+/* The supplied four-person example, inserted after original page 93. */
+#lesson > .fuzzy-set-practice { gap: 12px; }
+.fuzzy-set-practice .supp-heading { border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+.fuzzy-set-practice .fsp-question { flex: none; padding: 4px 0 8px; }
+.fuzzy-set-practice p { margin: 5px 0; line-height: 1.4; }
+.fuzzy-set-practice .fsp-label { display: inline-block; min-width: 11em; }
+.fuzzy-set-practice .fsp-task { margin-top: 10px; font-weight: 600; color: var(--wine); }
+.fuzzy-set-practice .fsp-math { font-family: 'STIX Two Math', 'Cambria Math', 'Times New Roman', serif; font-size: 1.2em; }
+.fuzzy-set-practice .fsp-pair { display: inline-block; white-space: nowrap; }
+.fuzzy-set-practice sub { font-size: .7em; }
+.fuzzy-set-practice .fsp-solutions { display: flex; flex-direction: column; justify-content: space-evenly; gap: 10px; flex: 1; min-height: 0; }
+.fuzzy-set-practice .fsp-answer { border-top: 1px solid var(--line); padding-top: 8px; }
+.fuzzy-set-practice .fsp-answer h2 { color: var(--wine); font-size: 1.06em; font-weight: 650; line-height: 1.3; margin: 0 0 5px; }
+.fuzzy-set-practice .fsp-answer h2 span { font-size: .78em; font-weight: 400; color: var(--muted); margin-left: 14px; }
+.fuzzy-set-practice .fsp-expansion { font-size: 1.08em; }
+.fuzzy-set-practice .fsp-result { padding-left: 3.6em; }
+@media (min-width: 761px) and (max-height: 760px) {
+  #lesson > .fuzzy-set-practice { gap: 7px; }
+  .fuzzy-set-practice .fsp-question { padding-bottom: 0; }
+  .fuzzy-set-practice .fsp-solutions { gap: 7px; }
+  .fuzzy-set-practice p { margin: 3px 0; }
+}
+@media (max-width: 760px) {
+  .fuzzy-set-practice .fsp-label { display: block; margin-top: 12px; }
+  .fuzzy-set-practice .fsp-math { font-size: 1.1em; }
+  .fuzzy-set-practice .fsp-result { padding-left: 0; }
+  .fuzzy-set-practice .fsp-solutions { flex: none; gap: 18px; }
+  .fuzzy-set-practice .fsp-answer h2 span { display: block; margin: 5px 0 0; }
+  .fuzzy-set-practice .fsp-answer.exercise-concealed { display: none; }
+}
+@media print {
+  .fuzzy-set-practice .fsp-answer { visibility: visible !important; }
+  .fuzzy-set-practice .fsp-answer * { visibility: visible !important; }
+}

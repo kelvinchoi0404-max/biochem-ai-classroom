@@ -1,0 +1,143 @@
+/* Chapter 03 keeps source page boundaries, with large notation and raster source diagrams. */
+.c03-page{--c03-body:clamp(24px,min(2.16vw,3.84dvh),36px);--c03-small:clamp(22px,min(1.91vw,3.4dvh),31px);--math-ink:#780038;--math-wash:#f8f2e9;--math-size:1.13em;padding-top:24px;padding-bottom:24px}
+.c03-page .page-heading{margin-bottom:24px}.c03-page .source-fragment{font-size:var(--c03-body);line-height:1.4;min-width:0;letter-spacing:-.015em}.c03-page .paragraph{margin:0 0 12px;white-space:pre-line;overflow-wrap:normal;word-break:normal;text-wrap:pretty}.c03-page .paragraph:last-child{margin-bottom:0}.c03-page .type-heading{font-size:1.05em;line-height:1.3;font-weight:650;letter-spacing:-.018em;margin-bottom:16px}.c03-page .type-subheading{font-size:1.02em;margin-bottom:13px}.c03-page sub,.c03-page sup{font-size:.66em;line-height:0}.c03-page sub{vertical-align:sub}.c03-page sup{vertical-align:super}.c03-page .math-formula{line-height:1.22}.c03-page .math-display{font-size:1.24em;padding:10px 14px}.c03-page .math-term{font-size:1.05em}
+.c03-composition{flex:1;min-height:0;display:grid;gap:24px 38px;align-content:center;align-items:start;grid-template-columns:minmax(0,1fr)}.c03-composition>*{min-width:0;min-height:0}.c03-columns-2 .c03-composition{grid-template-columns:repeat(2,minmax(0,1fr))}.c03-group{border-top:2px solid var(--gold);padding-top:16px}.c03-group+.c03-group .source-fragment{margin-top:0}.c03-density-compact .source-fragment,.c03-density-dense .source-fragment{font-size:var(--c03-small)}.c03-density-dense{--math-size:1.08em}.c03-density-dense .source-fragment{line-height:1.28}.c03-density-dense .paragraph{margin-bottom:8px}.c03-density-dense .type-heading{margin-bottom:10px}
+.c03-hero .hero-content{background:rgba(100,0,47,.93);max-width:1000px}.c03-hero h1{font-size:clamp(52px,min(5.4vw,9.4dvh),94px);line-height:1.14}.c03-hero .hero-photo{object-position:center}.c03-page-109 h1{font-size:clamp(110px,13vw,210px)}
+.c03-layout-agenda .source-fragment{display:grid}.c03-layout-objectives .source-fragment{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:column;grid-template-rows:repeat(5,auto);gap:16px 40px;font-size:var(--c03-small)}.c03-layout-objectives .paragraph{border-top:1px solid var(--line);padding-top:12px;margin:0}
+.c03-layout-illustrated .c03-composition{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-content:stretch;align-items:center}.c03-visuals{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;min-height:0;height:100%;align-content:stretch}.c03-visuals .lesson-figure{height:100%;min-height:0}.c03-visuals .image-button img{object-fit:contain}.c03-pictures-2,.c03-pictures-3,.c03-pictures-4,.c03-pictures-5{grid-template-rows:repeat(2,minmax(0,1fr))}.c03-pictures-3,.c03-pictures-4,.c03-pictures-5{grid-template-columns:repeat(2,minmax(0,1fr))}.c03-pictures-3 .lesson-figure:first-child{grid-column:1/-1}.c03-pictures-5{grid-template-rows:repeat(3,minmax(0,1fr))}
+.c03-layout-diagram .c03-composition{grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);align-content:stretch;align-items:center}.c03-layout-table .c03-composition{grid-template-columns:1fr 1fr;grid-template-rows:auto minmax(0,1fr);align-content:stretch;align-items:center}.c03-table-copy{grid-column:1/-1}.c03-table-wrap{height:100%;min-height:0}.c03-source-table{border-collapse:collapse;width:100%;height:100%;table-layout:fixed}.c03-source-table th,.c03-source-table td{border:1px solid var(--line);padding:9px;text-align:center}.c03-source-table th{background:var(--wine);color:#fff}.c03-source-table th .paragraph,.c03-source-table th .key-term,.c03-source-table th .math-formula{color:#fff}.c03-source-table .source-fragment{font-size:var(--c03-small);line-height:1.3}.c03-source-table .paragraph{margin:0}
+.c03-native-math{display:inline-flex;vertical-align:middle;padding:0 4px;margin:0;max-width:100%;cursor:zoom-in;line-height:1;background:white}.c03-native-math img{display:block;width:auto;height:2.15em;max-width:100%;object-fit:contain}.with-native-math{line-height:1.55!important}.c03-page-76 .c03-native-math img,.c03-page-77 .c03-native-math img{height:2.65em}
+.c03-page-15 .c03-composition,.c03-page-18 .c03-composition,.c03-page-21 .c03-composition,.c03-page-88 .c03-composition{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);gap:16px}.c03-page-21 .c03-visuals,.c03-page-88 .c03-visuals{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:1fr}.c03-page-15 .c03-picture-copy,.c03-page-18 .c03-picture-copy{width:100%}.c03-page-21 .c03-picture-copy .source-fragment:not(:first-child),.c03-page-88 .c03-picture-copy .source-fragment:not(:first-child){font-size:var(--c03-small)}
+@media(min-width:1600px){.c03-page{padding-top:32px;padding-bottom:32px}.c03-page .page-heading{margin-bottom:32px}.c03-composition{gap:32px 50px}.c03-page .paragraph{margin-bottom:18px}.c03-density-dense .paragraph{margin-bottom:12px}}
+@media(min-width:761px) and (max-width:1100px){.c03-page{--c03-body:24px;--c03-small:22px}.c03-composition{gap:20px 26px}.c03-page .page-heading h1{font-size:34px}.c03-page .page-heading{margin-bottom:22px}.c03-density-dense{--math-size:1.06em}.c03-density-dense .source-fragment{line-height:1.23}}
+@media(max-width:760px){.c03-page{height:auto;min-height:100%;padding:26px 24px 40px}.c03-composition{display:flex!important;flex-direction:column;align-items:stretch!important}.c03-page .source-fragment{font-size:23px!important}.c03-page .c03-visuals{height:auto;display:flex;flex-direction:column}.c03-page .lesson-figure{height:300px!important}.c03-layout-objectives .source-fragment{display:block}.c03-source-table{height:360px}.c03-native-math img{max-width:100%;height:2em}.c03-page .math-unit{white-space:normal}.c03-hero h1{font-size:46px}}
+
+.c03-columns-3 .c03-composition{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.c03-has-lead .c03-composition{grid-template-rows:auto minmax(0,1fr);align-content:stretch}
+.c03-has-lead .g0{grid-column:1/-1;border-top:0;padding-top:0}
+.c03-group .source-fragment+.source-fragment{margin-top:22px}
+.c03-page-46 .source-fragment,.c03-page-48 .source-fragment{font-size:clamp(21px,min(1.8vw,3.2dvh),29px);line-height:1.3}
+.c03-page-46 .math-display,.c03-page-48 .math-display{display:inline;padding:0;background:transparent;border:0;font-size:var(--math-size)}
+.c03-page-86 .lesson-figure{height:200px;margin-top:18px;max-width:240px}
+.c03-page-86 .c03-composition{align-content:center}
+.c03-layout-supplement .c03-composition{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-content:stretch;align-items:center}
+
+.c03-layout-diagram-full .c03-composition{align-content:stretch}
+.c03-visuals>:only-child{grid-column:1/-1;grid-row:1/-1}
+.c03-source-blank{position:absolute;right:0;bottom:0;width:12px;height:12px}
+.c03-visuals{position:relative}
+.c03-page-22 .c03-composition,.c03-page-27 .c03-composition,.c03-page-40 .c03-composition{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);align-items:center}
+.c03-source-table th:has(.c03-diagram){background:white}
+.c03-source-table .c03-diagram{height:54px;margin:0}
+.c03-source-table .c03-diagram .image-button{height:100%;width:100%}
+
+.c03-page .math-formula{overflow-wrap:anywhere}
+.c03-layout-definition-diagram .c03-composition{grid-template-columns:1.1fr 1fr;align-content:stretch;align-items:center}
+.c03-example-diagram{display:grid;grid-template-rows:auto minmax(0,1fr);gap:16px;height:100%}
+.c03-page-38 .c03-example-diagram .source-fragment{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.c03-page-38 .c03-example-diagram [data-paragraph='7']{grid-column:1/-1;margin-bottom:0}
+.c03-page-38 .math-display{font-size:1.1em;padding:8px}
+.c03-layout-proof-diagram .c03-composition{grid-template-columns:repeat(3,minmax(0,1fr));align-content:stretch;align-items:start;gap:26px}
+.c03-proof-column{border-top:2px solid var(--gold);padding-top:16px;height:100%}
+.c03-proof-column:last-child{display:grid;grid-template-rows:auto minmax(0,1fr);gap:16px}
+.c03-page-45 .source-fragment{font-size:var(--c03-small);line-height:1.28}
+.c03-page-45 .paragraph{margin-bottom:10px}
+.c03-page-45 .math-display{display:inline;font-size:var(--math-size);padding:0;border:0;background:transparent}
+.c03-table-pane,.c03-matrix-pane{display:grid;grid-template-rows:auto minmax(0,1fr);gap:12px;height:100%;min-height:0}
+.c03-page-95 .c03-source-table th,.c03-page-95 .c03-source-table td{padding:5px}
+.c03-page-95 .c03-source-table .c03-diagram{height:42px}
+.c03-page-95 .c03-composition{align-items:stretch;row-gap:18px}
+.c03-page-95 .c03-table-copy .source-fragment{font-size:var(--c03-small)}
+
+.c03-page sub,.c03-page sup{white-space:nowrap}
+.c03-layout-formula-composition .c03-composition{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto minmax(0,1fr);align-content:stretch;gap:18px 38px}
+.c03-merged-formula{grid-column:1/-1;display:grid;grid-template-rows:auto minmax(0,1fr);gap:10px;height:100%}
+.c03-page-64 .source-fragment{font-size:var(--c03-small);line-height:1.3}
+.c03-page-64 .paragraph{margin-bottom:8px}.c03-page-64 .type-heading{margin-bottom:10px}
+.c03-page-64 .math-display{font-size:1.15em;padding:6px 12px}
+.c03-page-64 .c03-composition>article{border-top:2px solid var(--gold);padding-top:12px}
+
+.c03-formula-pair,.c03-line-group{display:block;margin-bottom:10px}
+.c03-formula-pair{white-space:nowrap}.c03-line-group:last-child,.c03-formula-pair:last-child{margin-bottom:0}
+.c03-page-101 .source-fragment{font-size:var(--c03-small)}
+.c03-layout-matrix-derivation .c03-composition{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto minmax(0,1fr);align-content:stretch;align-items:start;gap:18px 36px}
+.c03-page-98 .c03-composition{grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:minmax(0,1.2fr) minmax(0,1fr);align-items:center}
+.c03-matrix-derivation{grid-column:1/-1;display:grid;grid-template-rows:auto minmax(0,1fr);gap:8px;height:100%}
+.c03-matrix-input{height:100%;min-height:0}.c03-matrix-input .lesson-figure{height:100%}
+.c03-page-97 .source-fragment,.c03-page-98 .source-fragment{font-size:var(--c03-small);line-height:1.3}
+.c03-page-97 .paragraph,.c03-page-98 .paragraph{margin-bottom:10px}
+.c03-page-97 .math-display{font-size:1.15em;padding:8px 12px}
+.c03-matrix-derivation .c03-visuals{isolation:isolate;background:#fff}
+.c03-answer-mask{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.c03-matrix-derivation .lesson-figure{position:relative;z-index:1;background:#fff}
+.c03-page-41 .source-fragment{font-size:var(--c03-small)}
+
+.c03-reading-notice{margin-top:22px;padding-top:16px;border-top:2px solid var(--gold);font-size:clamp(19px,min(1.65vw,2.9dvh),26px);line-height:1.45}
+.c03-reading-notice strong{display:inline-block;padding:4px 12px;margin-bottom:9px;background:var(--gold);color:var(--ink);font-weight:650}
+.c03-reading-notice p{margin:0}.c03-reading-notice p+p{margin-top:5px}
+.c03-reading-hero .hero-action{margin-top:22px}
+@media(max-width:760px){.c03-reading-hero{height:auto;min-height:100%}.c03-reading-notice{font-size:19px}.c03-reading-hero .hero-content{padding-top:26px;padding-bottom:32px}}
+
+/* Supplementary generated images stay beside the heading, without replacing source text. */
+.c03-page .page-heading.with-illustration{display:flex;align-items:center;gap:18px;margin-bottom:12px}
+.c03-page .page-heading.with-illustration h1{flex:1;min-width:0}
+.c03-illustration{display:flex;align-items:center;gap:9px;flex:0 0 auto;padding:5px 8px;border:1px solid var(--line);background:#faf8f3;text-align:left;cursor:zoom-in}
+.c03-illustration img{display:block;width:84px;height:54px;object-fit:contain}
+.c03-illustration strong{display:block;font-size:18px;color:var(--wine);white-space:nowrap}
+.c03-illustration small{display:block;font-size:11px;margin-top:3px;white-space:nowrap}
+.c03-illustration:hover,.c03-illustration:focus-visible{border-color:var(--wine);background:#f4edde}
+dialog.c03-illustration-drawer{width:min(1600px,96vw);max-height:96dvh}
+.c03-illustration-drawer .drawer-header{padding:10px 20px}
+.c03-illustration-drawer .drawer-header h2{font-size:24px}
+.c03-illustration-drawer #drawer-body{padding:12px 20px}
+.c03-illustration-drawer .image-explanation-layout{display:block}
+.c03-illustration-drawer .image-stage{padding:0;min-height:0;background:white}
+.c03-illustration-drawer .image-full{width:100%;max-height:calc(96dvh - 200px);object-fit:contain}
+.c03-illustration-drawer .image-explanation{margin-top:10px}
+.c03-illustration-drawer .explanation-label{font-size:12px}
+.c03-illustration-drawer .image-explanation>p{font-size:18px;line-height:1.4;margin:3px 0 0}
+.c03-illustration-drawer .image-evidence{font-size:14px;margin-top:4px}
+@media(min-width:1600px){.c03-page .page-heading.with-illustration{margin-bottom:25px}}
+@media(max-width:760px){.c03-page .page-heading.with-illustration{display:block;margin-bottom:22px}.c03-illustration{margin-top:12px;width:156px}.c03-illustration-drawer .drawer-header h2{font-size:19px}.c03-illustration-drawer #drawer-body{padding:12px}.c03-illustration-drawer .image-full{max-height:64dvh}.c03-illustration-drawer .image-explanation>p{font-size:17px}}
+
+/* Page 38 keeps its source definition and full diagram alongside a two-click exercise. */
+.c03-page-38 .c03-composition{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:26px;align-items:stretch}
+.c03-page-38 .c03-definition{display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.c03-page-38 .c03-definition>.source-fragment{font-size:clamp(22px,min(1.85vw,3.28dvh),30px);line-height:1.35}
+.c03-resolution-practice{padding:15px 18px;border-top:3px solid var(--gold,#fdbf57);background:#faf6f0;color:#23242a}
+.c03-resolution-practice h2{font-size:23px;line-height:1.2;margin:0 0 12px;color:#7a003c}
+.c03-resolution-practice-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px}
+.c03-resolution-practice p{margin:0 0 8px;line-height:1.35}
+.c03-resolution-practice p:last-child{margin-bottom:0}
+.c03-resolution-practice .resolution-practice-formula{font-family:"Arial Unicode MS","STIX Two Math","Cambria Math",serif;font-size:29px;white-space:nowrap}
+.c03-resolution-practice .resolution-practice-prompt,.c03-resolution-practice .resolution-practice-explanation{font-size:21px}
+.c03-resolution-practice .resolution-practice-result{color:#7a003c;font-weight:650}
+.c03-resolution-practice-explanation strong{color:#b6202c}
+.c03-resolution-practice [data-resolution-answer]{border-left:1px solid #ded5d1;padding-left:16px}
+@media(min-width:761px) and (max-height:760px){.c03-page-38 .page-heading{margin-bottom:18px}.c03-page-38 .paragraph{margin-bottom:10px}.c03-page-38 .c03-definition>.source-fragment{line-height:1.28}.c03-resolution-practice{padding:12px 15px}.c03-resolution-practice h2{margin-bottom:8px}}
+@media(max-width:760px){.c03-page-38 .c03-definition{gap:22px}.c03-resolution-practice{padding:18px}.c03-resolution-practice-grid{grid-template-columns:1fr;gap:18px}.c03-resolution-practice [data-resolution-answer]{border-left:0;border-top:1px solid #ded5d1;padding:16px 0 0}.c03-resolution-practice .resolution-practice-formula{font-size:28px}.c03-resolution-practice .resolution-practice-prompt,.c03-resolution-practice .resolution-practice-explanation{font-size:21px}}
+@media print{.c03-resolution-practice{break-inside:avoid;padding:8px 12px;margin:10px 0}.c03-resolution-practice h2{font-size:15pt}.c03-resolution-practice .resolution-practice-formula{font-size:17pt}.c03-resolution-practice .resolution-practice-prompt,.c03-resolution-practice .resolution-practice-explanation{font-size:12pt}}
+
+/* Page 93 adds one separate example beneath each unchanged source rule. */
+.c03-page-93 .c03-fuzzy-rules{display:grid;gap:10px;align-content:start}
+.c03-page-93 .c03-fuzzy-rules .source-fragment{font-size:clamp(22px,min(1.65vw,2.94dvh),30px);line-height:1.22}
+.c03-page-93 .c03-fuzzy-example{font-size:clamp(18px,min(1.35vw,2.4dvh),24px);line-height:1.3;margin:5px 0 0;padding:5px 9px;border-left:3px solid var(--gold);background:#faf6ee;color:#342d31}
+.c03-fuzzy-example-label{font-weight:650;color:var(--wine)}
+.c03-fuzzy-print-examples{break-inside:avoid;margin:12px 0;padding:10px 12px;border-left:3px solid #fdbf57;background:#faf6ee}
+.c03-fuzzy-print-examples h2{margin:0 0 6px;font-size:15pt}.c03-fuzzy-print-examples p{margin:5px 0;font-size:12pt;line-height:1.35}
+@media screen and (min-width:761px){#lesson .c03-page-93 .c03-fuzzy-rules .paragraph{margin-bottom:5px}#lesson .c03-page-93 .c03-fuzzy-rules .empty-paragraph{display:none}#lesson .c03-page-93 .c03-fuzzy-rules .type-heading{margin-bottom:6px}#lesson .c03-page-93 .c03-fuzzy-rule .source-fragment{margin-top:0}}
+@media screen and (min-width:761px) and (max-height:800px){#lesson .c03-page-93 .c03-fuzzy-rules{gap:3px}#lesson .c03-page-93 .c03-fuzzy-rules .source-fragment{line-height:1.22}#lesson .c03-page-93 .c03-fuzzy-rules .paragraph{margin-bottom:2px}#lesson .c03-page-93 .c03-fuzzy-rules .type-heading{padding-bottom:1px;margin-bottom:3px}#lesson .c03-page-93 .c03-fuzzy-example{margin-top:1px;padding-top:3px;padding-bottom:3px}}
+@media(max-width:760px){.c03-page-93 .c03-fuzzy-rules{gap:18px}.c03-page-93 .c03-fuzzy-example{font-size:21px;padding:8px 10px}}
+
+/* Keep all five page-93 rules visible when browser chrome reduces a 16:9 display. */
+@media screen and (min-width:761px){
+ #lesson .c03-page-93 .c03-composition{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-content:start;align-items:start}
+ #lesson .c03-page-93 .c03-fuzzy-rules{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px;row-gap:7px}
+ #lesson .c03-page-93 .c03-fuzzy-rule{min-width:0}
+ #lesson .c03-page-93 .c03-fuzzy-rule:nth-child(n+3){grid-column:1/-1}
+ #lesson .c03-page-93 .c03-fuzzy-rules .source-fragment{font-size:clamp(20px,min(1.65vw,3.1dvh),30px);line-height:1.2}
+ #lesson .c03-page-93 .c03-fuzzy-rules .type-heading{font-size:1em;line-height:1.22}
+ #lesson .c03-page-93 .c03-fuzzy-example{font-size:clamp(17px,min(1.35vw,2.65dvh),24px);line-height:1.25;padding:3px 8px;margin-top:3px}
+ #lesson .c03-page-93 .g1 .source-fragment{font-size:clamp(21px,min(1.75vw,3.5dvh),32px);line-height:1.32}
+ #lesson .c03-page-93 .g1 .paragraph{margin-bottom:7px}
+}

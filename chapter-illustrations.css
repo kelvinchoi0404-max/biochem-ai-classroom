@@ -1,0 +1,64 @@
+/* Eight teaching figures take part in the lesson composition. */
+#lesson .c03-inline-layout { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:28px; flex:1; min-height:0; align-items:stretch; }
+#lesson .c03-inline-source { display:flex; flex-direction:column; min-width:0; min-height:0; }
+#lesson .c03-inline-source > .c03-composition { width:100%; }
+#lesson .c03-inline-figure { display:grid; grid-template-rows:minmax(0,1fr); align-content:center; min-width:0; min-height:0; margin:0; padding-left:24px; border-left:1px solid #d8c9cf; }
+#lesson .c03-inline-figure .c03-illustration { display:block; padding:0; width:100%; height:100%; min-height:0; border:0; background:transparent; cursor:zoom-in; }
+#lesson .c03-inline-figure .c03-illustration img { display:block; width:100%; height:100%; max-height:100%; object-fit:contain; }
+#lesson .c03-inline-figure .c03-illustration:hover { background:#fbf6ed; }
+#lesson .c03-inline-figure .c03-illustration:focus-visible { outline:3px solid var(--wine); outline-offset:3px; }
+.c03-illustration-drawer .drawer-header h2,
+.c03-illustration-drawer .image-explanation { display:none; }
+.c03-illustration-drawer .drawer-header { justify-content:flex-end; }
+.c03-illustration-drawer .image-full { max-height:calc(96dvh - 100px); }
+@media screen and (min-width:761px) {
+ #lesson > .c03-inline-page.clause-overview { padding-top:10px; padding-bottom:6px; }
+ #lesson .c03-inline-page.clause-overview > .page-heading { padding-bottom:5px; margin-bottom:8px; }
+ #lesson .c03-inline-page:is(.c03-page-6,.c03-page-13) .source-fragment { grid-template-columns:minmax(0,1fr); gap:12px; }
+ #lesson .c03-inline-page:is(.c03-page-6,.c03-page-13) .type-body { padding:12px 16px; }
+ #lesson .c03-inline-page:is(.c03-page-29,.c03-page-91) .c03-inline-layout { grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); }
+ #lesson .c03-inline-page:is(.c03-page-29,.c03-page-44,.c03-page-91,.c03-page-106) .c03-composition { grid-template-columns:minmax(0,1fr); grid-template-rows:auto; align-content:center; gap:12px; }
+ #lesson .c03-inline-page .c03-group { padding-top:8px; }
+ #lesson .c03-inline-page .c03-group .source-fragment + .source-fragment { margin-top:12px; }
+ #lesson .c03-inline-page.clause-overview .c03-inline-layout { grid-template-columns:minmax(0,3.7fr) minmax(0,1fr); gap:18px; }
+ #lesson .c03-inline-page.clause-overview .clause-columns { gap:16px; }
+ #lesson .c03-inline-page.clause-overview .clause-column { gap:8px; }
+ #lesson .c03-inline-page.clause-overview .clause-step { padding-top:5px; }
+ #lesson .c03-inline-page.clause-overview .source-fragment,
+ #lesson .c03-inline-page.clause-overview .paragraph { line-height:1.2; }
+ #lesson .c03-inline-page.clause-overview .paragraph { margin-bottom:3px; }
+ #lesson .c03-inline-page.clause-overview .paragraph:last-child { margin-bottom:0; }
+ #lesson .c03-inline-page.clause-overview .type-heading { margin-bottom:6px; line-height:1.2; }
+ #lesson .c03-inline-page.clause-overview .c03-inline-figure { padding-left:16px; }
+ #lesson .c03-inline-page.c03-page-98 .c03-inline-layout { grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); }
+ #lesson .c03-inline-page.c03-page-98 .c03-composition { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:auto minmax(0,1fr) minmax(0,1.2fr); gap:12px 20px; align-items:center; }
+ #lesson .c03-inline-page.c03-page-98 .c03-composition > article { grid-column:1/-1; }
+ #lesson .c03-inline-page.c03-page-98 .c03-matrix-derivation { grid-row:3; }
+ #lesson .c03-inline-page.c03-page-98 .c03-matrix-input { max-height:100%; }
+ #lesson .c03-inline-page.c03-page-106 .c03-inline-layout { grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); }
+ #lesson .c03-inline-page.c03-page-106 .math-display { display:inline; padding:0; background:none; font-size:1em; border:0; }
+ #lesson .c03-inline-page.c03-page-106 .paragraph { line-height:1.3; margin-bottom:8px; }
+ #lesson .c03-inline-page.c03-page-106 .paragraph:last-child { margin-bottom:0; }
+}
+@media screen and (min-width:1600px) {
+ #lesson .c03-inline-layout { gap:40px; }
+}
+@media screen and (max-width:1100px) and (min-width:761px) {
+ #lesson .c03-inline-layout { gap:20px; }
+ #lesson .c03-inline-figure { padding-left:16px; }
+}
+@media screen and (max-width:760px) {
+ #lesson .c03-inline-layout { display:flex; flex-direction:column; gap:24px; }
+ #lesson .c03-inline-figure { order:-1; display:block; padding:0 0 20px; border-left:0; border-bottom:1px solid #d8c9cf; }
+ #lesson .c03-inline-figure .c03-illustration { height:auto; }
+ #lesson .c03-inline-figure .c03-illustration img { height:auto; max-height:none; }
+ .c03-illustration-drawer .image-full { max-height:calc(96dvh - 100px); }
+ #lesson .c03-inline-source { display:block; }
+}
+@media print {
+ .c03-inline-layout { display:block; }
+ .c03-inline-source { display:block; }
+ .c03-inline-figure { break-inside:avoid; padding:12px 0 0; border:0; margin:12px 0; }
+ .c03-inline-figure .c03-illustration { display:block; border:0; padding:0; background:none; }
+ .c03-inline-figure img { width:100%; max-height:85mm; object-fit:contain; }
+}

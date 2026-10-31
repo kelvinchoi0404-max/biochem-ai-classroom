@@ -1,0 +1,120 @@
+/* V14 · Chapter 04. Authored page composition; source DOM and assets stay exact. */
+@media (min-width:761px) {
+  .readability-page.c04-page {
+    --c04-body:clamp(25px,min(2.35vw,4.18dvh),39px);
+    --c04-small:clamp(23px,min(2.03vw,3.62dvh),34px);
+    --math-ink:#700032;
+    --math-wash:#faf3e8;
+  }
+  .readability-page.c04-page .source-fragment {line-height:1.43;letter-spacing:-.012em}
+  .readability-page.c04-page .paragraph {margin-bottom:15px;text-wrap:pretty}
+  .readability-page.c04-page .type-heading {font-size:1.08em;line-height:1.3;margin-bottom:16px;letter-spacing:-.02em}
+  .readability-page.c04-page .type-subheading {line-height:1.32;margin-bottom:12px}
+  .readability-page.c04-page .c04-composition {gap:22px 30px}
+  .readability-page.c04-page .c04-group {border-top:2px solid #c09558;padding-top:16px}
+  .readability-page.c04-page .concept-frame {background:none}
+  .readability-page.c04-page .concept-frame>.source-fragment>.type-heading:first-child {border-bottom:0;padding-bottom:0}
+  .readability-page.c04-page.c04-has-lead .g0 {border:0;padding-top:0}
+  .readability-page.c04-density-compact .source-fragment {font-size:var(--c04-small);line-height:1.37}
+  .readability-page.c04-page .math-formula {font-weight:700;line-height:1.28}
+  .readability-page.c04-page .math-display {padding:13px 18px;border-left:4px solid #bc8840;background:#faf3e8;font-size:1.28em;line-height:1.3}
+  .readability-page.c04-page .math-term {font-weight:720}
+  .readability-page.c04-page .c04-board {border:2px solid #6e4d5d;background:#fffdf9}
+  .readability-page.c04-page .c04-board td {border-color:#99838b;font-variant-numeric:tabular-nums;line-height:1.12}
+  .readability-page.c04-page .c04-board-label {padding-top:14px;font-weight:650;color:#4e3943}
+
+  /* Objectives and method comparisons each have a stable reading row. */
+  .readability-page.c04-layout-objectives .source-fragment {gap:18px 32px}
+  .readability-page.c04-layout-objectives .paragraph {padding:14px 14px 10px;border-top:2px solid #bb8840;background:#fbf8f3;line-height:1.38}
+  .readability-page.c04-page-5 .g3 {grid-column:1/-1;border-top:1px solid #d7c6aa;padding-top:14px}
+  .readability-page.c04-page-5 .g3 .paragraph {margin-bottom:0}
+  .readability-page.c04-page-7 .g1,
+  .readability-page.c04-page-7 .g2,
+  .readability-page.c04-page-7 .g3,
+  .readability-page.c04-page-8 .g1,
+  .readability-page.c04-page-8 .g2,
+  .readability-page.c04-page-8 .g3,
+  .readability-page.c04-page-19 .c04-group,
+  .readability-page.c04-page-22 .c04-group {padding:18px 14px 14px;background:#faf7f1}
+  .readability-page.c04-page-7 .g2,
+  .readability-page.c04-page-8 .g2,
+  .readability-page.c04-page-19 .g1,
+  .readability-page.c04-page-22 .g1 {border-color:#92516d;background:#faf5f7}
+  .readability-page.c04-page-19 .paragraph {line-height:1.47}
+  .readability-page.c04-page-7 .source-fragment {font-size:var(--c04-small);line-height:1.42}
+  .readability-page.c04-page-22 .source-fragment {font-size:calc(var(--c04-body) * 1.08);line-height:1.55}
+  .readability-page.c04-page-6 .g1 .paragraph {padding:9px 0;border-bottom:1px solid #e7dfe1;margin-bottom:5px}
+  .readability-page.c04-page-9 .g1,
+  .readability-page.c04-page-9 .g2 {padding:16px 14px;background:#faf8f4}
+  .readability-page.c04-page-20 .g1,
+  .readability-page.c04-page-20 .g2,
+  .readability-page.c04-page-27 .g1,
+  .readability-page.c04-page-27 .g2 {padding:18px 16px 12px;background:#faf8f3}
+  .readability-page.c04-page-26 .c04-group {padding:18px 14px;background:#faf8f3}
+  .readability-page.c04-page-26 .g1 {background:#faf5f7;border-color:#92516d}
+
+  /* State vector / operators / state-space tuple remain aligned with their definitions. */
+  .readability-page.c04-layout-state-definition .c04-composition {gap:18px 30px}
+  .readability-page.c04-layout-state-definition .source-fragment {font-size:var(--c04-small);line-height:1.33}
+  .readability-page.c04-layout-state-definition .g0,
+  .readability-page.c04-layout-state-definition .g1 {background:#faf8f3;padding:12px 14px 6px}
+  .readability-page.c04-layout-state-definition .paragraph {margin-bottom:9px}
+  .readability-page.c04-layout-state-definition .math-display {font-size:1.26em;padding:10px 14px}
+  .readability-page.c04-layout-state-definition .g2 .type-heading {font-size:1em;line-height:1.34;font-weight:500}
+  .readability-page.c04-layout-state-definition .g2 [data-paragraph='8'],
+  .readability-page.c04-layout-state-definition .g2 [data-paragraph='9'],
+  .readability-page.c04-layout-state-definition .g2 [data-paragraph='10'],
+  .readability-page.c04-layout-state-definition .g2 [data-paragraph='11'] {padding-left:14px;border-left:2px solid #d7bd8e}
+  .readability-page.c04-page-12 .source-fragment {line-height:1.55}
+  .readability-page.c04-page-13 .c04-copy .source-fragment {line-height:1.36}
+  .readability-page.c04-page-13 .c04-copy .paragraph {margin-bottom:4px}
+  .readability-page.c04-page-13 .c04-puzzle-copy .paragraph {margin-bottom:3px;line-height:1.32}
+  .readability-page.c04-page-18 .source-fragment {line-height:1.36}
+  .readability-page.c04-page-18 .c04-maze-intro {gap:28px}
+
+  /* Evaluation formulas and constraints are focal lines, with prose at a separate rhythm. */
+  .readability-page.c04-page-31 .g0,
+  .readability-page.c04-page-31 .g1 {padding:15px 14px;background:#faf8f3}
+  .readability-page.c04-page-31 .g1 {background:#faf5f7;border-color:#92516d}
+  .readability-page.c04-page-31 .c04-game-estimates {gap:12px 16px;padding:12px 0;font-weight:550}
+  .readability-page.c04-page-31 .c04-game-estimates .math-formula {font-size:1.2em}
+  .readability-page.c04-page-32 .g1,
+  .readability-page.c04-page-32 .g2 {padding:16px 14px;background:#faf8f3}
+  .readability-page.c04-page-32 .source-fragment {font-size:var(--c04-small);line-height:1.36}
+  .readability-page.c04-layout-evaluation .g0 {padding:18px 16px;background:#faf8f3}
+  .readability-page.c04-layout-evaluation .g0 .math-display {font-size:1.58em;padding:17px 18px;margin-top:8px;white-space:nowrap}
+  .readability-page.c04-layout-evaluation .g1 .paragraph,
+  .readability-page.c04-layout-evaluation .g2 .paragraph {margin-bottom:16px}
+  .readability-page.c04-page-34 .source-fragment {line-height:1.37}
+  .readability-page.c04-page-34 .c04-copy .paragraph {margin-bottom:13px}
+  .readability-page.c04-page-35 .c04-copy .source-fragment {font-size:var(--c04-small);line-height:1.43}
+  .readability-page.c04-page-35 .c04-copy .type-heading {font-size:1.12em;line-height:1.3}
+  .readability-page.c04-page-36 .c04-copy .paragraph {margin-bottom:18px}
+  .readability-page.c04-page-38 .g1,
+  .readability-page.c04-page-39 .g0,
+  .readability-page.c04-page-39 .g1,
+  .readability-page.c04-page-40 .g1 {padding:16px 14px;background:#faf8f3}
+  .readability-page.c04-page-39 .source-fragment {font-size:var(--c04-small);line-height:1.36}
+  .readability-page.c04-page-39 .math-display {padding:5px 0;background:none;border:0;font-size:1.16em}
+  .readability-page.c04-page-39 .g2 {padding-top:13px}
+  .readability-page.resource-video-04-23 .resource-source .type-heading {font-size:1.03em;line-height:1.3;margin-bottom:6px}
+  .readability-page.resource-video-04-23 .resource-source .paragraph {margin-bottom:7px}
+}
+@media (min-width:761px) and (max-width:1100px) {
+  .readability-page.c04-page {--c04-body:25px;--c04-small:23px}
+  .readability-page.c04-page .c04-composition {gap:18px 24px}
+  .readability-page.c04-page .paragraph {margin-bottom:12px}
+  .readability-page.c04-page-7 .c04-group,
+  .readability-page.c04-page-8 .c04-group,
+  .readability-page.c04-page-19 .c04-group,
+  .readability-page.c04-page-26 .c04-group {padding-left:10px;padding-right:10px}
+  .readability-page.c04-layout-state-definition .source-fragment {line-height:1.3}
+  .readability-page.c04-layout-state-definition .math-display {font-size:1.2em;padding:8px 12px}
+  .readability-page.c04-page-31 .g0,
+  .readability-page.c04-page-31 .g1,
+  .readability-page.c04-page-32 .g1,
+  .readability-page.c04-page-32 .g2 {padding:12px 10px}
+  .readability-page.c04-layout-evaluation .g0 .math-display {font-size:1.45em;padding:14px 12px}
+  .readability-page.c04-page-39 .g0,
+  .readability-page.c04-page-39 .g1 {padding:12px 10px}
+}
